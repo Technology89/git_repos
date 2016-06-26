@@ -1,0 +1,43 @@
+If-Else-Elsif
+	if var < X
+	
+	elsif var >= X			elseif wird bei Ruby ohne das 2te "e" geschrieben
+	
+	else
+	
+	end									jede "IF" abfrage mit "end" beenden 
+
+	!=			Ungleich
+	<=			kleiner - gleich
+	>=			größer - gleich
+	<				kleiner
+	>				größer
+	==			gleich
+
+Unless
+	problem = false
+	print "Good to go!" unless problem
+		Wird erst ausgegeben wenn "problem"=true
+
+Boolsche Operatoren
+	&&			UND
+	true && true # => true
+	true && false # => false
+	false && true # => false
+	false && false # => false
+
+	||			ODER
+	true || true # => true
+	true || false # => true
+	false || true # => true
+	false || false # => false
+
+	!				NOT
+	!true # => false
+	!false # => true
+
+	Kombinieren
+	(x && (y || w)) && z
+
+Rechnen
+X**3 = X*X*X

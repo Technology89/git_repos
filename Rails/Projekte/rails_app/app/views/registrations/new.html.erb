@@ -1,0 +1,20 @@
+<h3>Neue Registrierung für Event: <%= @event.name %></h3>
+
+	<%= render "shared/errors", object: @registration %>
+
+	<%= form_for [@event, @registration] do |f| %>
+
+		<div class="row">
+			<div class="medium-3 columns">
+				<%= f.label :how_heard %>
+			</div>
+			<div class="medium-9 columns">
+				<%= f.select :how_heard, Registration::HOW_HEARD_OPTIONS, prompt: "Bitte wählen!" %>
+			</div>
+		</div>	
+			<div class="row">
+			<div class="medium-12 columns">
+				<%= f.submit %>
+			</div>
+		</div>	
+	<% end %>		

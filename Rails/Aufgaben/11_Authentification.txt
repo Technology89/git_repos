@@ -1,0 +1,11 @@
+Login
+
+Erzeugen eines Controllers mit der Bezeichnung sessions.
+Erzeugen von Routen für eine 'singular session resource'.
+Erstellen eines SignIn-Links im Header-Bereich.
+
+Die Actions new und create des sessions-Controller und ein signin-Formular sollen dem Benutzer einen Login ermöglichen.
+
+Ergänzen Sie die MOVIE-App durch einen Sign-Out-Button, und den Sessions-Controller durch eine destroy-Action.
+
+Denken Sie daran was passiert, wenn ein User gelöscht wird.

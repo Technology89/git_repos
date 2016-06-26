@@ -1,0 +1,2 @@
+Fügen Sie zur Tabelle Users eine Spalte admin vom Datentyp Boolean hinzu.
+Stellen Sie sicher, dass nur ein Admin-User neue Events anlegen und editieren kann.

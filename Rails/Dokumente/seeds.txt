@@ -1,0 +1,12 @@
+Unter db/seeds.rb kann das Model direkt nach erstellen automatisch mit Daten gefüllt werden.
+
+Bsp:
+	Project.create(title: "", description: "", start_date: "")
+
+Direkt ein verschachteltes Model füllen:
+
+	p1 = Project.create(title: "Urlaubsziel auswählen", description: "Bla bla reisen bla bla", start_date: "2016-08-01")
+	p1.tasks.create(...)
+
+Eintragen über Konsole:
+	rake db:seed

@@ -1,0 +1,10 @@
+Navigation innerhalb des Dateisystems 
+
+	cd ordnername
+		//navigiert in den Ordner
+
+	cd ..
+		//geht eine Ornerebene zurück
+
+	cd ~
+		//geht in das Homeverzeichnis des angemeldeten Benutzers

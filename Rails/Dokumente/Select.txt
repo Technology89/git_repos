@@ -1,0 +1,16 @@
+Im Model einen Hash-Anlegen
+	RANKING_ITEMS = { "Sehr schlecht" => "1", "Schlecht" => "2", "Okay" => "3", "Gut" => "4", "Sehr gut" => "5"}
+
+Form anpassen
+	<div class="field">
+   		<%= f.label :ranking %><br>
+   		<%= f.select :ranking, Validation::RANKING_ITEMS %>
+ 	</div>
+
+Key zu Value anzeigen
+	def create_text(validation)
+		Validation::RANKING_ITEMS.key(validation.ranking.to_s)
+	end
+
+Aufruf
+	<%= create_text(validation) %>

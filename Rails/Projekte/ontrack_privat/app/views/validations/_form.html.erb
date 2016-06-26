@@ -1,0 +1,29 @@
+<%= form_for([@project, @validation]) do |f| %>
+  <% if @validation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@validation.errors.count, "error") %> prohibited this validation from being saved:</h2>
+
+      <ul>
+      <% @validation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :ranking %><br>
+    <%= f.select :ranking, Validation::RANKING_ITEMS %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

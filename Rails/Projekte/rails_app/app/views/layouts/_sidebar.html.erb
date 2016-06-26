@@ -1,0 +1,8 @@
+<h4>Eventliste</h4>
+<ul class="side-nav">
+	<% @sidebar_events.each do |event| %>
+	<li>				
+		<%= link_to event.name, event_path(event.id) %>
+	</li>
+	<% end %>		
+</ul>

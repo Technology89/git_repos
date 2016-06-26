@@ -1,0 +1,13 @@
+Root-Seite Festlegen
+	root "events#index"
+
+	Events ist der Controller und index gibt die html-Datei an.
+
+Routen anpassen
+	get "events" => "events#index"
+		Verlinkt /events auf die Index des Event-Controllers
+
+	resources :movies
+		Erstellt automatisch links zu unterschiedlichen Actions
+
+		Gleichzeitig werden Methoden zur verlinkung erstellt

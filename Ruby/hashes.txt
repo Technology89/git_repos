@@ -1,0 +1,17 @@
+Hashes
+
+Hashes sind Arrays mit einem variablen Index
+
+Syntax:
+	my_hash = { "wert1" => "Ninja Turtles",	"wert2" => "was anderes", "wert3?" => true }
+	my_hash = { :wert1 => "Ninja Turtles", :wert2 => "was anderes" }
+	my_hash = { wert1: "Ninja Turtles", wert2: "was anderes" }
+
+	Leerer Hash:
+		my_hash = {}
+		my_hash = Hash.new
+
+	Ausgeben von einem Hash:
+		my_hash.each do | key, value |			
+			puts "#{key} => #{value}"		
+		end

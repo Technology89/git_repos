@@ -1,0 +1,51 @@
+<h1><%= @event.name %></h1>
+
+<p><%= @event.description %></p>
+
+<p><%= image_for(@event) %></p>
+
+<p>
+	<h3>Wann</h3>
+	<%= @event.start_at %>
+
+	<h3>Wo</h3>
+	<%= @event.location %>
+
+	<h3>Preis</h3>
+	<%= @event.price %>
+
+	<h3>Anzahl Plätze</h3>
+	<%= pluralize(@event.spots_left, 'spot') %>
+</p>
+
+<hr />
+<h3>Likers</h3>
+<% if @likers.any? %>	
+	Anzahl der Likes: <%= @likers.count %>
+	<hr/>
+	<ul id="add_likers">
+
+		<% @likers.each do |var| %>
+			<li><%=link_to var.name, var %></li>
+		<% end %>
+	</ul>
+<% else %>
+	<p>Sei der 1. Liker, du Penner!</p>
+<% end %>
+<% if @current_like %>
+	<%= button_to "Unlike", event_like_path(@event, @current_like), class: "button", method: :delete %>
+<% else %>
+	<%= button_to "Like", event_likes_path(@event), remote: true, class: "button" %>
+<% end %>
+<p>
+	<ul class="button-group">
+		<li>
+			<%= link_to "Alle Events anzeigen", events_path, class: "button" %>
+		</li>
+		<li>
+			<% if @event.spots_left > 0 %>
+			<%= link_to "Registrieren", new_event_registration_path(@event.id), class: "button" %>
+			<% end %>
+		</li>
+	</ul>
+</p>

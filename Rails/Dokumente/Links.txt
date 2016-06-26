@@ -1,0 +1,16 @@
+link_to "Zurück", request.referer
+	Zurück Button
+
+link_to "Show", movie_path(var.id)
+	Greift auf die erzeugte Methode movie_path zu und übergibt die ID des Datensatzes als Parameter
+
+	link_to "Alle Filme anzeigen", movies_path
+
+link_to "Edit", edit_movie_path(var.id)
+	Greift auf die erzeugte Methode edit_movie_path zu und übergibt die ID des Datensatzes als Parameter
+
+link_to "Delete", movie_path(var.id), method: :delete, data: {confirm: "Sind sie sicher?"}
+	Greift auf die Methode "destroy" im Controller zu und löscht den Datensatz mit der angegebenen ID.
+
+	Vor dem Löschen kommt durch das eingebaute JavaScript eine Abfrage ob wirklich gelöscht werden soll.
+

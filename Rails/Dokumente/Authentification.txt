@@ -1,0 +1,12 @@
+Vorraussetzung
+	gem bcrypt
+		Dieses GEM sorgt für eine Verschlüsselte speicherung des Passwortes, legt im Hintergrund einige virtuelle Eigenschaften und einige hilfreiche Methoden an.
+
+USER - Model
+	has_secure_password
+
+SESSION
+	sessions_controller
+		Ist ein User erfolgreich eingeloggt, dass heißt hat die Überprüfung von zusammenhängender E-Mail Adresse und Password eine übereinstimmung mit den Daten aus der Tabelle gegeben, ist der User angelegt und eine Session-Variable: user_id mit der ID des eingeloggten Users wird erstellt und für eine bestimmte Zeit mitgeführt.
+
+	Überprüfung ob es eine Session gibt im applikation_controller

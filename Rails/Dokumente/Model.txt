@@ -1,0 +1,48 @@
+Anlegen eines neuen Datensatzes
+	<var> = <Klassenname>.new(<Spaltenname>: <"Inhalt">...)
+		Klassenname ist Case-Sensitiv (Immer groß)
+	<var>.save
+
+	z.B.: a = Event.new(name: "Alt-J", location: "Berlin", price: 40.00)
+
+	a.save
+
+	Ohne Variable über die Methode ".create"
+
+	<Klassenname>.create(<Spaltenname>: <"Inhalt">...)
+
+	z.B.: Event.create(name: "Beatles", location: "Manchester", price: 10.00)
+
+Ausgeben von Datensätzen
+	Event.all --- gibt alle Datensätze aus die in der Tabelle vorhanden sind
+
+Datensatz bearbeiten
+	Event.first.update(start_at: 100.days.from_now, description: "Bla bla bla")
+
+Alle Datensätze bearbeiten
+	Event.update_all(start_at: "2016-03-10 19:00:00")
+
+Methoden im Model
+	Es gibt 2 Arten von Methoden. 
+	Die sogenannten Klassenmethoden, die mit dem Model-Namen aufgerufen werden, und die Objektmethoden, die mit einer instanz der Klasse aufgerufen werden.
+
+	Bsp. Klassenmethode:
+		Aufruf:
+			@events = Event.upcoming (im Controller)
+		Definition:
+			def self.upcoming
+				where("start_at >= ?", Time.now).order("start_at")
+			end (im Model)
+
+	Bsp. Objektmethode:
+		Aufruf:
+			@event = Event.find(2)
+			@event.free? (Überall wo ein Objekt ist)
+		Definition:
+			def free?
+				self.price.blank? || self.price == 0 (self nicht notwendig wenn eindeutig)
+			end	(im Model)
+
+
+
+

@@ -1,0 +1,29 @@
+Initialisieren
+
+	a. auf Github Account und repository anlegen
+	
+	b. lokales repository anlegen
+			mkdir git_repos
+			cd git_repos
+			git init
+	
+	c. konfiguration
+			git config --global user.name "user_von_github"
+			git config --global user.email "user_von_github"
+				//--global: gilt für alle zukünftigen Repos auf diesem Rechner
+			git config --global credebtial.helper 'cache --timeout=36000' 		
+				//Speichert die Logindaten für einen Tag
+
+	d. Verbinden Remote - Lokal
+			git remote add origin https://github.com/user_von_github/git_repos.git
+
+	Dateien synchronisieren
+		a. ins Verzeichnis git_repos navigieren
+		b. git add . -A
+		c. git commit -am "Beschreibung der Änderungen"
+		d. git push origin master  //git pull origin master -> lädt die Datein aus dem Online Repository
+
+	Dateien von Online synchronisieren
+		a. ins Verzeichnis git_repos navigieren
+		b. git reset --hard origin/master
+		c. git pull origin master

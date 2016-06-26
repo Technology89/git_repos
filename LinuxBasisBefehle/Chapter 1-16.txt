@@ -1,0 +1,3456 @@
+Chapter 01 Exam 
+
+Question ID 2 One of the jobs of the kernel is to: 
+
+Load the operating system after the computer is turned on 
+
+Transfer mail from one machine to another 
+
+Turn source code into machine code 
+
+* Manage the system’s resources 
+
+Question ID 3 Unix is: (choose two) 
+
+A distribution of Linux 
+
+A text editor 
+
+A type of hardware 
+
+* A trademark 
+
+* An operating system 
+
+Question ID 5 Linux is written in: 
+
+Perl 
+
+.NET 
+
+*C 
+
+Java 
+
+C++ 
+
+Question ID 6 Source code refers to: 
+
+*Human readable version of computer software 
+
+The version of a program that the computer runs on the CPU 
+
+The interface that software uses to talk to the kernel 
+
+The license that dictates how you may use and share the software 
+
+Question ID 7 Open source means: (choose two) 
+
+You must share your changes 
+
+* You can view the software's source code 
+
+You cannot charge anything for the software 
+
+You must support the software you share 
+
+* You can modify the software's source code 
+
+Question ID 8 Most of the tools that are part of Linux systems come from: 
+
+Red Hat and Debian 
+
+Google 
+
+The Open Source Initiative 
+
+The Linux foundation 
+
+* The GNU project 
+
+Question ID 10 The Linux platform that runs on mobile phones is called: 
+
+* Android 
+
+LinuxMobile 
+
+MicroLinux 
+
+IOS 
+
+Linux can’t run on phones 
+
+Question ID 11 What does a distribution provide to add and remove software from the system? 
+
+* Package manager 
+
+Partitioning tool 
+
+Compiler 
+
+bash 
+
+Application Programming Interface (API) 
+
+Question ID 12 The bootloader’s job is to: 
+
+Load the application into memory 
+
+Perform the initial installation of the kernel to hard drive 
+
+Install software from the Internet or removable media 
+
+* Load the kernel after the computer is powered on 
+
+Assign initial settings such as network address 
+
+Question ID 13 Unix was originally invented at: 
+
+*AT&T Bell Labs 
+
+Stanford University 
+
+Bangalore University 
+
+Xerox PARC 
+
+Berkeley University 
+
+Question ID 14 A license where you don’t have access to the source code is called: 
+
+* Closed source 
+
+Open source 
+
+Impaired source 
+
+Sourceless 
+
+Question ID 16 Which distributions are made by, or clones of, Red Hat? (choose two) 
+
+Slackware 
+
+* Fedora 
+
+Ubuntu 
+
+* CentOS 
+
+Debian 
+
+ 
+
+
+Question ID 17 Ubuntu is derived from which distribution? 
+
+Slackware 
+
+Red Hat Enterprise Linux 
+
+Scientific Linux 
+
+*Debian 
+
+Fedora 
+
+Question ID 19 Open source licenses differ, but generally agree that: (choose two) 
+
+You are not allowed to sell the software 
+
+* You should be able modify the software as you wish 
+
+You must redistribute your changes 
+
+* You should have access to the source code of software 
+
+Question ID 20 Applications make requests to the kernel and receive resources, such as memory, CPU, and 
+
+disk in return 
+
+True or False? 
+
+*True 
+
+False 
+
+Question ID 257 The most important consideration when choosing an operating system is: 
+
+Whether or not it is cloud-friendly 
+
+How much performance is needed 
+
+The operating system’s mascot 
+
+The licensing model of the operating system 
+
+*What the computer will do 
+
+Question ID 258 Linux is not Unix because: 
+
+It's not made by the Open Group 
+
+* It hasn't undergone certification 
+
+There are too many distributions 
+
+It's free 
+
+It's not good enough 
+
+Question ID 259 A release cycle: 
+
+Only applies to software you pay for 
+
+Describes how long the software will be supported for 
+
+*Describes how often updates to the software come out 
+
+Is always 6 months 
+
+Doesn’t matter in an Open Source environment 
+
+Question ID 260 A maintenance cycle: 
+
+* Describes how long a version of software will be supported 
+
+Should be long so that you have time before you need to upgrade 
+
+Only has meaning for paid software 
+
+Should be short so you always have the freshest releases 
+
+Describes how often updates for software come out 
+
+Question ID 261 If a software release is in a state in that it has many new features that have not been rigorously tested, it is typically 
+referred to as beta software. True or False? 
+
+* True 
+
+False 
+
+Question ID 262 Software is backward compatible if: 
+
+It works across Linux/Mac/Windows 
+
+It can be upgraded without downtime 
+
+* It still supports old file formats or applications 
+
+People still use old versions 
+
+If the next version still works the same way 
+
+Question ID 263 Apple’s OS X is: (choose three) 
+
+Derived from Linux 
+
+* Only compatible with Apple hardware 
+
+* Derived from FreeBSD 
+
+Able to natively run Windows binaries 
+
+*Certified as UNIX compatible 
+
+Question ID 264 Microsoft Windows: (choose three) 
+
+*Comes in desktop and server variants 
+
+*Has powerful scripting capabilities 
+
+*Has built in virtualization 
+
+Has a short maintenance cycle 
+
+Has a Linux compatibility mode 
+
+Question ID 265 Other commercial Unixes: 
+
+* Are UNIX certified 
+
+Are almost obsolete 
+
+Use completely different commands than Linux 
+
+Do not run the GNU tools 
+
+*Are tied to their vendor’s hardware 
+
+Question ID 266 When choosing a distribution of Linux, you should consider: (choose five) 
+
+* The maintenance cycle of the distribution 
+
+* Which distributions are supported by the software you need to run 
+
+* Whether or not the distribution is under active development 
+
+* Which management tools are provided by the distribution 
+
+* If you need support on the distribution itself 
+
+Popularity on social media 
+
+
+Question ID 267 The Samba application is a: 
+
+*File Server 
+
+Security Server 
+
+Web Server 
+
+Mail Server 
+
+Question ID 269 If you wanted to set up a blog, which software would be most helpful? 
+
+Dovecot 
+
+Postfix 
+
+**WordPress 
+
+Samba 
+
+MySQLChapter 02 Exam 
+
+Question ID 267 The Samba application is a: 
+
+Web Server 
+
+Mail Server 
+
+Security Server 
+
+* File Server 
+
+Question ID 268 Which of the following are examples of desktop software? (choose two) 
+
+* Web browser 
+
+* Music player 
+
+Compiler 
+
+File share 
+
+Web server 
+
+Question ID 269 If you wanted to set up a blog, which software would be most helpful? 
+
+Postfix 
+
+* WordPress 
+
+Samba 
+
+MySQL 
+
+Dovecot 
+
+Question ID 270 Which of the following pieces of software deal with file sharing? (choose three) 
+
+X-Windows 
+
+* Samba 
+
+* Netatalk 
+
+NFS 
+
+*PostgreSQL 
+
+Question ID 271 If you wanted to create and print an invoice, what could you use? 
+
+Evolution 
+
+Firefox 
+
+GNOME 
+
+Compiz 
+
+* LibreOffice 
+
+Question ID 272 POP and IMAP are related to: 
+
+Sharing files 
+
+* Email 
+
+Serving web pages 
+
+Reading and writing music 
+
+Letting users log in to multiple servers with 1 set of credentials 
+
+Question ID 273 When a computer boots, it can get its network information through: 
+
+SMTP 
+
+X11 
+
+*DHCP 
+
+LDAP 
+
+DNS 
+
+Question ID 274 Which of the following are examples of text editors? (choose four) 
+
+*pico 
+
+*vim 
+
+*emacs 
+
+*nano 
+
+yum 
+
+Question ID 275 A package manager: (choose two) 
+
+emails you when software is out of date 
+
+* downloads software from the Internet 
+
+* keeps track of which files belong to which packages 
+
+Can optionally repartition your disk to make room for Linux 
+
+performs a fresh install of Linux 
+
+Question ID 276 An interpreted programming language: (choose two) 
+
+requires a linking step but no compilation step 
+
+* is converted into machine specific instructions as the program runs 
+
+take fewer resources to run than a compiled language 
+
+requires a compilation step but no linking step 
+
+* tend to offer more features than compiled languages 
+
+ 
+
+
+Question ID 277 Which of the following are true about compiled programming languages? 
+
+Compiled languages are great for system administration tasks like scripting 
+
+* C is a compiled language 
+
+Perl is a compiled language 
+
+Ruby is a compiled language 
+
+A programmer is usually more productive when using a compiled language 
+
+Question ID 279 Which package manager is used in Fedora, a Red Hat derived system? 
+
+bash 
+
+tar 
+
+* yum 
+
+apt-get 
+
+vim 
+
+Question ID 280 The Linux shell: (choose three) 
+
+Has a built in text editor 
+
+*Has a scripting language 
+
+* Is customizable 
+
+Is responsible for tracking the location of configuration files 
+
+*Allows you to launch programs 
+
+Question ID 281 Which application would you use to edit and piece together sound files to make podcast? 
+
+* Audacity 
+
+Bash 
+
+GIMP 
+
+Thunderbird 
+
+Audiolicious 
+
+Question ID 282 The two main families of Linux shells are: (choose two) 
+
+Korn shell 
+
+emacs 
+
+* Bourne Shell 
+
+Python Shell 
+
+*C Shell 
+
+Question ID 283 Which server software would you use to create a company directory that you could search and authenticate against? 
+
+*OpenLDAP 
+
+ISC DHCP 
+
+Samba 
+
+Netatalk 
+
+bind 
+
+Question ID 284 A Mail Transfer Agent’s primary purpose is to: 
+
+Serve email to end clients 
+
+Filter out spam 
+
+* Deliver mail between servers 
+
+Act as a gateway between faxes and email 
+
+Manage the end user’s inbox 
+
+Question ID 285 Which of the following are examples of a web server? (choose two) 
+
+WordPress 
+
+postfix 
+
+NFS 
+
+* Apache 
+
+*Nginx 
+
+Question ID 286 If you wanted to let a Linux machine share files with Windows clients and servers, you would use: 
+
+NFS 
+
+*Samba 
+
+DNS 
+
+bind 
+
+Netatalk 
+
+Question ID 287 Richard Stallman is associated with: 
+
+* The Free Software Foundation 
+
+The Apache foundation 
+
+BSD Unix 
+
+The Open Source Initiative 
+
+Microsoft 
+
+Question ID 288 A “copyleft provision” in a software license means: 
+
+You must provide support for your modifications 
+
+You may not link against third party closed source software 
+
+You must provide free copies of the software if you use it 
+
+You give up your copyright to the software 
+
+*You must distribute the source to any changes you make 
+
+Question ID 289 The largest difference between the GPLv2 and BSD licenses is: 
+
+GPLv2 requires assigning copyright to the FSF 
+
+Nothing, they are virtually identical 
+
+GPLv2 is not approved by the OSI 
+
+* BSD has no copyleft provision 
+
+Only BSD allows commercial use 
+
+ 
+
+
+Question ID 290 The Free Software Foundation believes that: (choose two) 
+
+* Software should be free to share 
+
+No money should ever change hands 
+
+People should write software with no expectation of making money 
+
+*Software should be free to modify 
+
+Software should not have copyright 
+
+Question ID 291 Which of the following licenses was made by the FSF? 
+
+MIT 
+
+*GPLv3 
+
+Apache 
+
+BSD 
+
+Creative Commons 
+
+Question ID 292 A permissive free software license: (choose two) 
+
+*places no restrictions on sharing modifications 
+
+places the software in the public domain 
+
+does not allow the software to be locked to certain hardware 
+
+requires you share software changes but not binaries 
+
+*means you can use the software for anything you want 
+
+Question ID 293 Linux is distributed under which license? 
+
+Linux Foundation 
+
+GPLv3 
+
+BSD 
+
+*GPLv2 
+
+MIT 
+
+Question ID 294 Who founded the Open Source Initiative? (choose two) 
+
+Linus Torvalds 
+
+Richard Stallman 
+
+* Eric Raymond 
+
+University of California at Berkeley 
+
+*Bruce Perens 
+
+Question ID 295 A generic term for Open Source and Free Software is 
+
+GPL 
+
+Libre Software 
+
+OS/FS 
+
+SLOFF 
+
+* FLOSS 
+
+Question ID 296 Which are examples of permissive software licenses? (choose two) 
+
+* BSD 
+
+*MIT 
+
+GPLv2 
+
+GPLv3 
+
+LGPLv3 
+
+Question ID 297 What is the meaning of a public domain license? 
+
+*The author has relinquished the copyright on the work 
+
+The author has died 
+
+The work was done by a government agency 
+
+You must redistribute changes to the software 
+
+You may not use the work for commercial purposes 
+
+Question ID 298 Creative Commons licenses allow you to: (choose three) 
+
+Receive royalties on the use of the work 
+
+*Specify whether or not people may distribute changes 
+
+*Allow or disallow commercial use 
+
+Get a veto on where the work is used 
+
+*Specify whether or not changes must be shared 
+
+Question ID 299 If a podcast is licensed under the CC BY-ND license, you may: (choose two) 
+
+Sell it as part of a compilation 
+
+Add ads to it and post it to your website. 
+
+* Post it to your website 
+
+*Share it as long as you give credit to the author 
+
+Use an interview or song from it for your own podcast 
+
+Question ID 300 How can you make money from open source software? (choose three) 
+
+* Sell hardware that’s built to work with the software 
+
+Unlock premium features for people that pay 
+
+*Provide paid consulting services for users 
+
+Charge a yearly fee for the right to use the software 
+
+*Take payments for fixing bugs 
+
+Question ID 301 To place software under an open source license, you must give up your copyright. True or False? 
+
+True 
+
+* False 
+
+Question ID 302 The difference between the GPL and LGPL licenses are: 
+
+LGPL is shorter than GPL 
+
+LGPL applies to web services 
+
+LGPL was made by the OSI while GPL was made by the FSF 
+
+LGPL allows you to distribute the software in binary-only form 
+
+*LGPL allows linking to non GPLed software 
+
+
+Question ID 303 Permissive free software licenses: (choose three) 
+
+Include the GPLv2 and BSD 
+
+*Don’t have a copyleft provision 
+
+*Are not approved by the FSF 
+
+*Can allow software to be used inside closed source software 
+
+Are not approved by the OSI 
+
+Question ID 304 The Creative Commons version of Public Domain licensing is: 
+
+Attribution-NonCommercial-ShareAlike 
+
+NoAttribution-ShareAlike 
+
+Attribution-NonCommercial 
+
+Attribution 
+
+*No Rights Reserved 
+
+Question ID 305 Your company makes a hardware firewall that runs a custom Linux kernel. What are your obligations under GPLv2? 
+
+* You must make the source to your kernel available 
+
+There are no requirements 
+
+You must make the source to your custom web interface available 
+
+You must ensure your custom kernel runs on a regular Intel machine 
+
+You must make your hardware designs available 
+
+Question ID 306 Participating in open source projects can improve your technical skills, even if it is not your day job. True or False? 
+
+*True 
+
+False 
+
+Chapter 03 Exam 
+
+Question ID 307 Which of the following is true about graphical mode? (choose three) 
+
+* After login, you are provided with a desktop 
+
+*You access this mode by logging into a graphical display 
+
+You cannot use your mouse 
+
+*You have menus and tools to help you find what you are looking for 
+
+After login, you are provided with a command prompt 
+
+Question ID 308 Which of the following is provided by a graphical interface that isn’t normally provided to a non graphical interface? 
+(choose four) 
+
+*windows 
+
+*menus 
+
+*popups 
+
+shell 
+
+*desktop 
+
+Question ID 309 A server is likely to be running in graphical mode. True or False? 
+
+True 
+
+*False 
+
+Question ID 310 In graphical mode, you can get to a shell by running which applications? (choose two) 
+
+* terminal 
+
+xconsole 
+
+* xterm 
+
+gbash 
+
+guiterm 
+
+Question ID 311 Which of the following are traits of a multiuser operating system? (choose three) 
+
+* Many users can log in simultaneously with a unique account 
+
+Each user can only log in once per day 
+
+* Users can protect their information from other users 
+
+An administrative user gets a dedicated CPU 
+
+*Resources are shared between users 
+
+Question ID 312 Virtualization means: 
+
+A machine can swap memory to disk 
+
+Two users get different memory spaces on the same machine 
+
+A user can connect to a server over the network and use a virtual console 
+
+*A single host can be split up into multiple guests 
+
+Many users can share one hard drive 
+
+Question ID 313 In virtualization, what are the host and guest? (choose two) 
+
+The guest is the machine that runs the virtual machines 
+
+A host is a virtual machine 
+
+* A guest is a virtual machine 
+
+* The host is the machine that runs the virtual machines 
+
+The terms can be used interchangeably 
+
+Question ID 314 Which of the following are traits of cloud computing? (choose two) 
+
+You own the hardware but pay for it over time 
+
+* You pay for what you use 
+
+You don’t have to worry about performance any more 
+
+Only Linux works in cloud computing 
+
+*The resources are virtualized 
+
+ 
+
+ 
+
+
+Question ID 315 If you wanted to write a report that was to be printed, you would probably use: 
+
+A wiki 
+
+Chrome 
+
+Firefox 
+
+* LibreOffice 
+
+Adobe Flash 
+
+Question ID 316 If you want to store logins and passwords for different websites in a secure manner, you could use: 
+
+A text file in your home directory 
+
+Firefox 
+
+*KeePassX 
+
+A sticky note on your monitor 
+
+A LibreOffice Document 
+
+Question ID 317 You can configure your computer to check for updates automatically. True or False? 
+
+*True 
+
+False 
+
+Question ID 319 Two components that provide the ability to implement a firewall include: 
+
+ipfw 
+
+Uncomplicated Firewall 
+
+*gufw 
+
+* iptables 
+
+Cerberus 
+
+Question ID 322 What are tradeoffs of increasing the level of privacy you have in your web browser? (choose two) 
+
+Images won’t load properly 
+
+*You may have to explicitly permit some cookies to be saved 
+
+*Sites may not work properly 
+
+You may get viruses 
+
+Websites may load slower 
+
+Question ID 323 Which of the following is a tool that helps you anonymize your Internet browsing? 
+
+*The onion router 
+
+CookieCleaner 
+
+Web proxy 
+
+AnonFirefox 
+
+iptables 
+
+Question ID 324 Social network “like” buttons can track your activity across the Internet. True or False? 
+
+*True 
+
+False 
+
+Question ID 325 Which of the following are properties of a strong password? (choose three) 
+
+Long so that it can be reused on multiple sites 
+
+*A mix of upper and lower case 
+
+Based on easy to remember items like birthdays 
+
+*At least 10 characters long 
+
+*Includes symbols 
+
+Question ID 326 What can be done to prevent remote people from running programs on your computer? (choose two) 
+
+block all cookies 
+
+block third party cookies 
+
+Don’t use wireless networks – only wired 
+
+* use strong passwords on all user accounts 
+
+*Turn on a firewall 
+
+Chapter 04 Exam 
+
+Question ID 327 Select all the applications that provide access to the Command Line Interface (CLI)? (choose two) 
+
+* Virtual Terminal 
+
+*Terminal window 
+
+opera 
+
+firefox 
+
+Question ID 328 Which environment variable contains a list of directories that is searched for commands to execute? 
+
+PS2 
+
+PS1 
+
+* PATH 
+
+EXEC 
+
+Question ID 329 Select from the following commands those which can report the location of a command: (choose one) 
+
+*which 
+
+where 
+
+type 
+
+what 
+
+Question ID 331 A pair of single quotes ( ' ) will prevent the shell from interpreting any metacharacter. True or False? 
+
+*True 
+
+False 
+
+Question ID 332 A pair of double quotes ( " ) will prevent the shell from interpreting any metacharacter. True or False? 
+
+True 
+
+* False 
+
+
+Question ID 333 Using a pair of back quotes ( ` ) will cause a shell to execute the back-quoted text as a command and substitute the 
+output back into the original command. True or False? 
+
+* True 
+
+False 
+
+Question ID 334 Which of the following are glob characters? (choose three) 
+
+* The question mark "?" 
+
+*The asterisk "*" 
+
+*The square brackets "[" and "]" 
+
+The dash character "-" 
+
+Question ID 337 The semicolon ";" can be used to separate multiple commands to be executed in order. True or False? 
+
+* True 
+
+False 
+
+Question ID 338 The double ampersand characters ( && ) are used to separate commands to be executed conditionally, where if the 
+command to the left of the ampersands fails, then the command to the right of the ampersands will be executed. True or False? 
+
+True 
+
+*False 
+
+Question ID 339 To be able to output messages to the screen use the _______ command: 
+
+* echo 
+
+print 
+
+type 
+
+display 
+
+Question ID 340 The _______ command will print a list of the commands that you've previously executed. 
+
+list 
+
+exec 
+
+* history 
+
+eval 
+
+Question ID 341 To execute the same command as previously executed five commands ago, you would type: 
+
+&5 
+
+@-5 
+
+!5 
+
+* !-5 
+
+Question ID 342 The shell program is what interprets the commands you type into the terminal into instructions that the Linux Operating 
+System can execute. True or False? 
+
+*True 
+
+False 
+
+Question ID 343 The acronym CLI stands for: 
+
+* Command Line Interface 
+
+Computer Line Interface 
+
+Command Line Interpreter 
+
+Computer Link Interpreter 
+
+Question ID 344 Traditional UNIX command options used a single dash, like -a; _______ command options use two dashes like --all. 
+
+LINUX 
+
+shell 
+
+Kernel 
+
+* GNU 
+
+Question ID 345 The acronym GNU stands for: 
+
+Good News Unix 
+
+*Gnu's Not Unix 
+
+Gnu's Nearly Unix 
+
+Go Next Unit 
+
+Question ID 346 What one character treats the character that follows it as if it was surrounded by single quotes? 
+
+# 
+
+* \ 
+
+% 
+
+/ 
+
+Question ID 347 The main purpose of using glob characters is to be able to provide a command a list of filenames. True or False? 
+
+*True 
+
+False 
+
+Chapter 05 Exam 
+
+Question ID 22 What is the standard option to provide a command line program to view ist documentation? 
+
+--info 
+
+*--help 
+
+--doc 
+
+-h 
+
+Question ID 23The command man -k is the same as the command apropos. True or False? 
+
+*True 
+
+False 
+
+
+Question ID 24 The whatis command is the same as man -w. 
+
+True 
+
+*False 
+
+Question ID 26 The directory where additional documentation for software packages most likely can be found is: 
+
+/var/share/doc 
+
+/usr/software/doc 
+
+*/usr/share/doc 
+
+/var/lib/doc 
+
+Question ID 27 Which two pager commands are used by the man command to control movement within the document? (choose two) 
+
+page 
+
+* less 
+
+* more 
+
+grep 
+
+Question ID 28 Commands typically executed by a user are covered in what section of the manual? 
+
+5 
+
+*1 
+
+2 
+
+3 
+
+Question ID 29To search the man page sections for the keyword example, which of the following command lines could you execute? 
+(choose two) 
+
+*apropos example 
+
+man -f example 
+
+*man -k example 
+
+whatis example 
+
+Question ID 30 The statement that describes the difference between a man page and an info page is: 
+
+The man page is like a guide; the info page is a more concise reference. 
+
+The man page is a long detailed reference; the info page is very terse. 
+
+There is very little difference between them. 
+
+*The info page is like a guide; a man page is a more concise reference. 
+
+Question ID 31 If you are reading the synopsis of a command from a man page, then items in square brackets are: 
+
+Required arguments 
+
+Required options 
+
+Comments 
+
+*Optional 
+
+Question ID 32 The following sections commonly appear on a man page: (choose three) 
+
+LICENSE 
+
+* SYNOPSIS 
+
+*DESCRIPTION 
+
+*NAME 
+
+Question ID 33 Section 5 of the manual pages covers: 
+
+User commands 
+
+System administration commands 
+
+Games 
+
+*File Formats 
+
+Question ID 34 To start searching a man page, the first key you press is: 
+
+! 
+
+f 
+
+* / 
+
+S 
+
+Question ID 35 In order to exit viewing a man page, press: 
+
+x 
+
+*q 
+
+y 
+
+Z 
+
+Question ID 36 Which option for the man command should you use if you intend to send the output of the command to a printer? 
+
+*-t 
+
+-m 
+
+-T 
+
+--text 
+
+Question ID 37 What key should be used while working in the man command if you want to go to the end of the document? 
+
+goto 
+
+*G 
+
+g 
+
+e 
+
+Question ID 38 To get help on using the info command, execute: (choose two) 
+
+help info 
+
+info -q 
+
+*man info 
+
+*info info 
+
+ 
+
+
+Question ID 39 To get help while using the info command press: (choose one) 
+
+*h 
+
+z 
+
+a 
+
+g 
+
+Question ID 40 To exit the info command press: 
+
+z 
+
+x 
+
+*q 
+
+X 
+
+Question ID 41 In order to search an info page, the first key to press is: (choose one) 
+
+f 
+
+t 
+
+*s 
+
+g 
+
+Question ID 42 To go to the end of an info page press: 
+
+*END 
+
+] 
+
+n 
+
+N 
+
+Question ID 43 To go to the next match of a search on a man page press: 
+
+N 
+
+} 
+
+*n 
+
+] 
+
+Question ID 44 When interpreting the SYNOPSIS of a command found on a man page, the "|" means: 
+
+*The items it separates cannot be used together 
+
+The items it separates can be used together 
+
+Question ID 45 After performing a search, you can use the ____ key to return to a previously found match: 
+
+*N 
+
+U 
+
+D 
+
+n 
+
+Question ID 46 To move a page forward one at a time while viewing a man page, press the following: 
+
+Enter 
+
+m 
+
+*Spacebar 
+
+a 
+
+Chapter 06 Exam 
+
+Question ID 47 Hidden files are files that begin with what character? 
+
+A plus (+) 
+
+A dash (-) 
+
+*A period (.) 
+
+An asterisk (*) 
+
+Question ID 48 What option for the ls command will display all files, including hidden files? 
+
+-H 
+
+-w 
+
+-L 
+
+*-a 
+
+Question ID 49 The top-level directory on a Linux system is represented as: 
+
+C: 
+
+/home 
+
+/root 
+
+* / 
+
+Question ID 50 Is the following path absolute or relative? 
+
+/etc/ppp 
+
+*absolute 
+
+Relative 
+
+Question ID 51 Is the following path absolute or relative? 
+
+sysadmin/Documents 
+
+*relative 
+
+absolute 
+
+Question ID 52 Is the following path absolute or relative? 
+
+../../home/sysadmin 
+
+absolute 
+
+*relative 
+
+ 
+
+
+Question ID 53 The tilde (~) is used to represent: 
+
+nothing; it has no special meaning. 
+
+Any two single characters 
+
+* A user's home directory. 
+
+The directory above the current working directory 
+
+Question ID 54 Which of the following commands can be used to access the home directory of the user "bob" while logged in as root? 
+(choose two) 
+
+*cd /home/bob 
+
+~bob 
+
+cd && 
+
+*cd ~bob 
+
+Question ID 55 The double dot (..) can be used with the cd command to represent: 
+
+Nothing; it has no special meaning. 
+
+A user's home directory. 
+
+*The directory above the current working directory 
+
+Any two single characters 
+
+Question ID 56 The cd command by itself will take you to what directory? 
+
+*Your home directory 
+
+The directory above the current working directory 
+
+The system root directory 
+
+None; it is not a valid command 
+
+Question ID 57 What command will allow you to change your current working directory? 
+
+list 
+
+chdir 
+
+*cd 
+
+ls 
+
+Question ID 58 The double dot (..) can be used to represent the directory... 
+
+...any two single numbers 
+
+*...above the current directory 
+
+...above the current directory only when using the cd command. 
+
+...any directory below the current directory 
+
+Question ID 59 The ls command without options or arguments... 
+
+...prompts for a directory to list. 
+
+*...lists the contents of the current directory. 
+
+...generates an error as this command requires arguments. 
+
+...lists the contents of a user's home directory. 
+
+Question ID 60 The first character in a long listing (ls -l) indicates: 
+
+The owner 
+
+*If something is a file, directory, or symbolic link 
+
+The permissions 
+
+The size 
+
+Question ID 61 Which option for the ls command, when used in conjunction with the -l option, will display human-readable sizes? 
+
+-S 
+
+-M 
+
+-H 
+
+* -h 
+
+Question ID 62 Which of the following commands will prevent any aliased options to the ls command? 
+
+/ls 
+
+<ls 
+
+%ls 
+
+*\ls 
+
+Question ID 63 The ls command color codes results by default. True or False? 
+
+True 
+
+*False 
+
+Question ID 64 The command ls -S will sort files: 
+
+By number of symlinks, largest to smallest. 
+
+By modification date, newest to oldest. 
+
+*By size, largest to smallest. 
+
+By size, smallest to largest. 
+
+Question ID 65 When using the cp command, you must provide both a source and a destination. True or False? 
+
+True 
+
+*False 
+
+Question ID 66 Which option(s) can be used to prevent cp from overwriting an existing file? (choose two) 
+
+-z 
+
+-N 
+
+* -i 
+
+* -n 
+
+ 
+
+ 
+
+
+Question ID 67 The command rm -r will... 
+
+generate an error; -r isn't a valid option. 
+
+* remove a directory along with any files or subdirectories. 
+
+prompt for each confirmation before deleting each file in a directory. 
+
+remove only empty directories. 
+
+Question ID 68 Which option can be used with the rm command to prompt before deleting? 
+
+I 
+
+A 
+
+* -i 
+
+-P 
+
+Question ID 69 The rm command can delete multiple files at once. True or False? 
+
+*True 
+
+False 
+
+Question ID 70 Which of the following commands can be used to rename a file? 
+
+name 
+
+*mv 
+
+rn 
+
+cp 
+
+Question ID 72 The touch command can be used to: (choose two) 
+
+* update the time stamp of existing files 
+
+change a file's name 
+
+change ownership of a file 
+
+*create new files 
+
+Chapter 07 Exam 
+
+Question ID 73 Compression on a file works by: 
+
+Consolidating multiple files into one 
+
+Storing most of the data on removable media and just leaving a pointer 
+
+Removing the high order bit from each byte 
+
+Eliminating gaps within the file 
+
+* Removing redundant information 
+
+Question ID 75 In general, which of the following would you want to use lossless compression? 
+
+An encrypted email 
+
+An mp3 audio file 
+
+A JPEG image 
+
+A movie 
+
+*A log file 
+
+Question ID 76 Lossy compression: (choose three) 
+
+*Sacrifices some quality 
+
+*Usually results better compression than lossless 
+
+Decompresses to an identical version as the original 
+
+Is often used with documents 
+
+*Is often used with images 
+
+Question ID 77 You type gzip myfile.tar. What happens? (choose two) 
+
+myfile.tar is unarchived into the current directory 
+
+*myfile.tar.gz holds a compressed version of myfile.tar 
+
+An error; you forgot to pass the name of the output file 
+
+An error; you forgot to specify the file with –f 
+
+*myfile.tar is removed 
+
+Question ID 78 How would you obtain output similar to the following? 
+
+compressed uncompressed ratio uncompressed_name 
+
+278168 1016950 72.6% tags 
+
+gunzip –t tags 
+
+gunzip –l tags.gz 
+
+file tags 
+
+gunzip –x tags 
+
+* gzip –l tags 
+
+Question ID 79 Which command would you use to archive the “Documents” directory and compress it with bzip2 compression? 
+
+tar –fzc Documents documents.tbz 
+
+*tar –cjf documents.tbz Documents 
+
+tar –cf Documents documents.tbz 
+
+tar –czf documents.tbz Documents 
+
+tar –cjf Documents 
+
+Question ID 80 Which flag would you pass to tar in order to have it make a new archive? 
+
+* -c 
+
+–j 
+
+–n 
+
+-x 
+
+–t 
+
+ 
+
+ 
+
+
+Question ID 81 Which command will show what’s inside the compressed tarball with a name of foo.tar.gz? 
+
+tar –xf foo.tar.gz 
+
+tar –tjf foo.tar.gz 
+
+tar –lf foo.tar.gz 
+
+* tar –tzf foo.tar.gz 
+
+tar –tf foo.tar.gz 
+
+Question ID 82 In the command tar –cvjf foo.tbz a b c, what are a, b, and c? 
+
+nothing; -cvjf only expects one parameter 
+
+a is the directory that will be prepended to files; b and c are files inside it 
+
+extra flags passed to tar 
+
+matching operators; anything starting with a, b, or c will be added 
+
+*file names to be added to the archive 
+
+Question ID 83 Given the command tar –cvjf homedirs.tbz /home, which of the following are true? (choose two) 
+
+Files that are present in the archive might overwrite files in /home 
+
+*The command will print out each filename as it is processed 
+
+The /home directory will be restored with the contents of homedirs.tbz 
+
+*The output file will be compressed 
+
+Only files starting with /home will be extracted from the archive 
+
+Question ID 84 You archived your users’ directories into a file called backup.tar.gz. You then view the archive and see the filenames follow 
+this convention: 
+
+home/username/somefile 
+
+How will you extract just the files for the user called fred? 
+
+tar –tjf backup.tar.gz /home/fred 
+
+tar –tzf /home/fred < backup.tar.gz 
+
+tar –xjf backup.tar.gz home/fred/ 
+
+* tar –xzf backup.tar.gz home/fred/ 
+
+tar –xzf backup.tar.gz fred 
+
+Question ID 85 Which of the following commands will create a zipfile with the contents of your Documents directory? 
+
+zip mydocs.zip Documents 
+
+* zip -r mydocs.zip Documents 
+
+zip –c mydocs.zip Documents 
+
+zip –cf mydocs.zip Documents 
+
+zip –f mydocs.zip Documents 
+
+Question ID 86 Given a file called documents.zip, how can you see what’s in it without extracting the files? 
+
+unzip --list documents.zip 
+
+* unzip –l documents.zip 
+
+zip –lf documents.zip 
+
+showzip documents.zip 
+
+zip –l documents.zip 
+
+Question ID 87 Given a file called documents.zip, how can you extract just the files under ProjectX? 
+
+unzip –t documents.zip ProjectX 
+
+zip –x documents.zip ProjectX 
+
+unzip documents.zip ProjectX 
+
+* unzip documents.zip ProjectX/* 
+
+unzip documents.zip | grep ProjectX 
+
+Question ID 88 You try to compress a file that is already compressed. Which of the following statements is true? 
+
+The file changed while you were compressing it 
+
+The file will actually be uncompressed 
+
+*The file will not be compressed any further than it already was 
+
+The file will be deleted 
+
+The compression algorithm needs to be set to the "currently compressed" mode for it to be compressed further 
+
+Question ID 89 Which of the following commands can be used to compress a file? (choose three) 
+
+*bunzip2 
+
+* gzip 
+
+cat 
+
+*zip 
+
+Bzip 
+
+Question ID 90 The three main modes of tar are: (choose three) 
+
+* List 
+
+Copy 
+
+Compress 
+
+*Extract 
+
+*Create 
+
+Question ID 91 In the command tar –czf foo.tar.gz bar, what is the purpose of the f flag? 
+
+Tells tar to read from the file that follows the flag 
+
+Tells tar to copy only files, and not directories 
+
+Tells tar to print the name of each file as it is processed 
+
+* Tells tar to write to the file that follows the flag 
+
+Specifies extra compression is to be used 
+
+Question ID 92 Which two commands do the same thing? (choose two) 
+
+*tar –c foo | gzip > foo.tar.gz 
+
+tar –tzf foo.tar.gz 
+
+tar –x foo | gzip 
+
+*tar –czf foo.tar.gz foo 
+
+tar –xzf foo.tar.gz 
+
+
+Question ID 902 The _____ command is normally executed daily to update the database of all files that are on the system. 
+
+locate 
+
+search 
+
+find 
+
+*updated 
+
+Chapter 08 Exam 
+
+Question ID 93 Error messages generated by commands are sent where by default? 
+
+* STDERR 
+
+Log files 
+
+STDOUT 
+
+STDIN 
+
+Question ID 94 A successful command will print output to STDOUT. True or False? 
+
+* True 
+
+False 
+
+Question ID 95 Which of the following commands will direct error messages to the file error.log? (choose two) 
+
+* ls /root &> error.log 
+
+ls /root $> error.log 
+
+* ls /root 2> error.log 
+
+ls /root > error.log 
+
+Question ID 96 A pipe allows you to... 
+
+* ...send the output of one command to another 
+
+...send the same input to multiple commands 
+
+...type multiple commands at one prompt 
+
+...send the output of a command to a file 
+
+Question ID 97 Channel 2 is: 
+
+STDALL 
+
+*STDERR 
+
+STDIN 
+
+STDOUT 
+
+Question ID 98 Which of the following commands will append its output to output.file? 
+
+echo Testing -> output.file 
+
+echo Testing > output.file 
+
+* echo Testing >> output.file 
+
+output.file < echo Testing 
+
+Question ID 99 Which command(s) can be used to sort the lines of list.file alphabetically and display it on the screen? (choose two) 
+
+* sort < list.file 
+
+echo list.file > sort 
+
+cat list.file >> sort 
+
+* cat list.file | sort 
+
+Question ID 100 Which option of the head command will display only the first five lines of a file? 
+
+-l 5 
+
+-n 
+
+No option needed; head displays only five lines by default. 
+
+* -n 5 
+
+Question ID 101 The grep command... 
+
+* ...will display all the lines in a file containing the specified Regular Expression. 
+
+...is not case sensitive. 
+
+...will display all the lines that begin with the specified Regular Expression. 
+
+...will display the line numbers in a file that contain a specified Regular Expression. 
+
+Question ID 102 The grep command can be used with glob characters. True or False? 
+
+*True 
+
+False 
+
+Question ID 103 Which of the following commands will display only lines that begin with start? 
+
+grep $start file.txt 
+
+grep *start file.txt 
+
+*grep ^start file.txt 
+
+grep \start file.txt 
+
+Question ID 104 Which of the following commands will display only lines that begin with test? 
+
+grep $test* file.txt 
+
+grep &test file.txt 
+
+grep *test file.txt 
+
+*grep ^test file.txt 
+
+Question ID 105 Which of the following commands will display lines that contain either start or end? 
+
+egrep (start|end) file.txt 
+
+*egrep 'start|end' file.txt 
+
+egrep start&end file.txt 
+
+egrep start end file.txt 
+
+ 
+
+
+Question ID 106 Which of the following commands can be used to scroll through a text file? (choose two) 
+
+cat 
+
+some 
+
+*less 
+
+* more 
+
+Question ID 107 The find command can search for files based on the size of the file. True or False? 
+
+* True 
+
+False 
+
+Question ID 108 Which of the following commands scans the file to determine file locations? 
+
+search 
+
+* find 
+
+locate 
+
+where 
+
+Question ID 109 Which option for the cut command is used to specify a delimiter? 
+
+-f 
+
+* -d 
+
+-D 
+
+= 
+
+Question ID 110 Which option for the cut command is used to specify the field? 
+
+* -f 
+
+-d 
+
+# 
+
+-D 
+
+Question ID 111 Which option for the wc command will print the number of lines in a file? 
+
+-w 
+
+* -l 
+
+-C 
+
+-L 
+
+Question ID 112 Which option for the wc command will print the total number of words in a file? 
+
+-L 
+
+* -w 
+
+-C 
+
+-l 
+
+Question ID 113 Which command can be used to print line numbers? 
+
+sort 
+
+ln 
+
+num 
+
+* nl 
+
+Question ID 114 The command echo "text" > file.txt will create file.txt if it does not already exist. True or False? 
+
+*True 
+
+False 
+
+Question ID 115 The command echo "text" > file.txt will not overwrite file.txt if it already exists. True or False? 
+
+True 
+
+* False 
+
+Question ID 116 The command echo "text" >> file.txt will not overwrite file.txt if it already exists. True or False? 
+
+* True 
+
+False 
+
+Chapter 09 Exam 
+
+Question ID 117 The “echo” command: 
+
+Copies variables from one to another 
+
+Tests a variable for duplication 
+
+Duplicates the input stream to the output stream 
+
+Is used for variable assignment 
+
+* Is used to output text to the console 
+
+Question ID 118 A file begins with #!/bin/csh. This means: 
+
+The operator should not be using /bin/csh 
+
+* Running the script will invoke /bin/csh to interpret the rest of the file 
+
+This is a Perl script 
+
+C Shell compatibility mode is enabled 
+
+Nothing, this is a comment 
+
+Question ID 119 Which are appropriate editors for writing shell scripts? (choose two) 
+
+Firefox 
+
+/bin/bash 
+
+LibreOffice Writer 
+
+* nano 
+
+*vi 
+
+ 
+
+
+Question ID 120 Most of nano’s commands take the form of: 
+
+mouse clicks 
+
+Alt and another character 
+
+* Control and another character 
+
+The F1 through F12 function keys 
+
+Escape followed by another character 
+
+Question ID 121 What does this shell script do? 
+
+FOO=/tmp/foo 
+
+if [ ! –d $FOO ]; then 
+
+mkdir $FOO 
+
+fi 
+
+Creates /tmp/foo and raises an error if there is a problem 
+
+Nothing, as there is a problem with the conditions in the if statement 
+
+* Creates /tmp/foo if it does not exist 
+
+Makes the /tmp/foo directory if a file by that name exists 
+
+Outputs a message to the screen 
+
+Question ID 123 Which of the following are correct about for and while loops? (choose two) 
+
+* while loops have a test each cycle to determine if it should run again 
+
+for loops require a variable over which to iterate 
+
+for loops have a test each cycle to determine if it should run again 
+
+* for loops operate over a fixed list of items 
+
+while loops operate over a fix list of items 
+
+Question ID 124 Given the following part of a script: 
+
+if [ -f $1 ]; then 
+
+echo “I am here” 
+
+fi 
+
+What is the meaning of $1? 
+
+It is a special variable that indicates the exit code of the command before it 
+
+It is a file called $1 
+
+* It is the first argument passed to the script 
+
+It is a list of files that gets interpolated 
+
+It is a parameter to –f, indicating the size of the file 
+
+Question ID 125 Given the following script that is run through ./test.sh hello goodbye: 
+
+if [ -f $2 ]; then 
+
+echo "I am here" 
+
+fi 
+
+When will “I am here” be printed? 
+
+Never 
+
+* If a file called "goodbye" exists in the current directory 
+
+If there are two files in the current directory 
+
+If a file called "hello" exists in the current directory 
+
+The script will always print “I am here” 
+
+Question ID 126 What is the correct way to assign the word "Hello" to a variable? 
+
+* A=”Hello” 
+
+echo $A “Hello” 
+
+$A=”Hello” 
+
+A = “Hello” 
+
+echo “Hello” > A 
+
+Question ID 127 What is the correct way to save the current directory to a variable? 
+
+pwd | $A 
+
+pwd $A 
+
+A=pwd 
+
+* A=`pwd` 
+
+A=cwd 
+
+Question ID 128 Which shell command accepts input from the user’s keyboard? 
+
+* read 
+
+gets 
+
+echo 
+
+input 
+
+$1 
+
+Question ID 129 What information is held inside $? ? 
+
+The current process id 
+
+The name of the command run 
+
+The number of arguments passed to the script 
+
+* The previous command’s exit code 
+
+The current user ID 
+
+Question ID 130 How would you finish your script with an exit code of 42? 
+
+break 42 
+
+CODE=42 
+
+return 42 
+
+$?=42 
+
+* exit 42 
+
+
+Question ID 131 The if command looks for what exit code to consider a condition to be true? 
+
+8 
+
+255 
+
+* 0 
+
+1 
+
+10 
+
+Question ID 132 The number of users logged in is in a variable called USERS. How would you test to see if 5 users are logged in? 
+
+* test $USERS –eq 5 
+
+test $USERS = 5 
+
+test $USERS,5 
+
+test $USERS –a 5 
+
+test –f USERS=5 
+
+Question ID 133 Given the following script: 
+
+while [ ! –f /tmp/foo ]; do 
+
+echo –n “.” 
+
+process_data > /tmp/foo 
+
+done 
+
+Which of the following are true? (choose two) 
+
+/tmp/foo will be removed if it exists 
+
+* process_data will be called at most once 
+
+The screen will fill with dots. 
+
+process_data will never be run 
+
+* If a file called /tmp/foo exists, process_data won’t be run 
+
+Question ID 134 A conditional that lets you make multiple comparisons with a pattern is called: 
+
+test 
+
+* case 
+
+branch 
+
+if 
+
+fanout 
+
+Question ID 135 What is the meaning of $(( $i + 1)) ? 
+
+This will return the value of the first argument to the script 
+
+This will return the value of the next argument to the script 
+
+If i is 0, the loop will stop 
+
+This runs the command stored in variable i 
+
+* 1 will be added to the i variable 
+
+Question ID 136 How would you write a test that says “if /tmp/foo is a directory or USERS is greater than 5”? 
+
+test –f /tmp/foo –o $USERS –ge 5 
+
+test –d /tmp/foo | $USERS > 5 
+
+test /tmp/foo || $USERS > 5 
+
+* test –d /tmp/foo –o $USERS –gt 5 
+
+test /tmp/foo –d –o $USERS -gt 5 
+
+Chapter 10 Exam 
+
+Question ID 140 Which of the following are valid CPU types for Intel-based platforms? (choose two) 
+
+* 32 bit 
+
+48 bit 
+
+24 bit 
+
+* 64 bit 
+
+Question ID 141 64 bit platforms can access more memory than 32 bit platforms. True or False? 
+
+* True 
+
+False 
+
+Question ID 142 Which of the following commands will display CPU information? (choose three) 
+
+* arch 
+
+cpuinfo 
+
+* cat /proc/cpuinfo 
+
+lspic 
+
+* lscpu 
+
+Question ID 143 A CPU flag... 
+
+...defines how many devices can be attached to the system 
+
+...defines the CPU manufacturer 
+
+* ...defines the features that the CPU supports 
+
+...is not a valid term 
+
+Question ID 144 Which command displays information from SMBIOS? 
+
+showbios 
+
+smbios 
+
+dmibios 
+
+* dmidecode 
+
+Question ID 146 Choose all of the following statements that are true in regard to virtual RAM: (choose three) 
+
+Virtual RAM is stored in the CPU 
+
+* Virtual RAM is stored on a hard drive 
+
+* Virtual RAM is used when available physical RAM is low. 
+
+*Virtual RAM is also called swap space 
+
+
+Question ID 148 Which of the following are common busing systems? (choose two) 
+
+RAM 
+
+* PCI 
+
+BIOS 
+
+CPU 
+
+* USB 
+
+Question ID 152 A division of a hard drive may be referred to as a _______ .(choose two) 
+
+label 
+
+block 
+
+* slice 
+
+* partition 
+
+Question ID 153 Which of the following are valid partitioning types? (choose two) 
+
+* MBR 
+
+PC 
+
+BIOS 
+
+* GPT 
+
+Question ID 154 The fdisk command is a tool used for working with the MBR partitioned disks. True or False? 
+
+* True 
+
+False 
+
+Question ID 155 Which of the following is the valid device file name for the first IDE hard drive on the system? 
+
+/dev/sda 
+
+/dev/ide 
+
+* /dev/hda 
+
+/dev/hd1 
+
+Question ID 156 Which of the following are valid video cable connector types? (choose two) 
+
+* VGA 
+
+AMD 
+
+* DVI 
+
+HAD 
+
+Chapter 11 Exam 
+
+Question ID 157 What does the acronym RPM mean? 
+
+Relocate Package Manager 
+
+Return Package Management 
+
+*RPM Package Management 
+
+Recursive Package Manager 
+
+Question ID 158 One way to install new software on a Linux system is to use a package management system. True or False? 
+
+* True 
+
+False 
+
+Question ID 159 When you execute the dmesg command, the system displays messages that are generated by the kernel. True or False? 
+
+* True 
+
+False 
+
+Question ID 160 Which of the following are package management commands for distributions with software distributed in files ending in 
+".deb"? (choose three) 
+
+rpm 
+
+* apt-get 
+
+* dpkg 
+
+* aptitude 
+
+Question ID 161 Which of the following are package management commands for distributions with software distributed in files ending in 
+".rpm"? 
+
+* yumex 
+
+apt-get 
+
+* yum 
+
+* rpm 
+
+Question ID 162 The Linux kernel mounts the following pseudo-filesystems to provide access to information about hardware devices 
+connected to the system: (choose two) 
+
+/info 
+
+*/proc 
+
+* /sys 
+
+/devices 
+
+Question ID 163 The /proc directory contains a subdirectory for each process present on the system. True or False? 
+
+* True 
+
+False 
+
+Question ID 164 The Process ID (PID) of the init process is 
+
+varies 
+
+100 
+
+*1 
+
+0 
+
+ 
+
+
+Question ID 165 The process (ps) command shows only processes running in the current shell by default. True or False? 
+
+* True 
+
+False 
+
+Question ID 166 The following system load averages are displayed by the top command: (choose three) 
+
+10 minute 
+
+* 1 minute 
+
+* 5 minute 
+
+* 15 minute 
+
+Question ID 167 The free command outputs statistics about: 
+
+* Memory usage 
+
+Software usage 
+
+CPU usage 
+
+Disk usage 
+
+Question ID 168 What directory typically contains log files? 
+
+/log 
+
+* /var/log 
+
+/proc/log 
+
+/usr/log 
+
+Question ID 169 Which log file contains messages regarding authentication and authorization? 
+
+dmesg 
+
+syslog 
+
+messages 
+
+* secure 
+
+Question ID 170 All log files contain only text data. True or False? 
+
+True 
+
+* False 
+
+Question ID 171 A load average of 1.0 always means the system is fully loaded. True or False? 
+
+True 
+
+* False 
+
+Question ID 172 A command that will continuously update statistics about running processes: 
+
+bottom 
+
+tail 
+
+head 
+
+*top 
+
+Question ID 173 The following are valid Linux option styles: (choose three) 
+
+DOS slash (/) 
+
+* Traditional Unix with a single dash (-) 
+
+*BSD Unix without a dash 
+
+* GNU long options with two dashes (--) 
+
+Question ID 174 Which file contains the information passed to the kernel at boot time? 
+
+/proc/kopts 
+
+/proc/kargs 
+
+* /proc/cmdline 
+
+/proc/kernel 
+
+Question ID 175 To make changes permanent for kernel parameter files found under /proc/sys, the following file can have entries added 
+to it: 
+
+* /etc/sysctl.conf 
+
+/etc/sysinfo.conf 
+
+/etc/procsys.conf 
+
+/etc/procctl.conf 
+
+Question ID 176 To get a list of all packages installed on a system using RPM Package Management you can execute: 
+
+* rpm -qa 
+
+rpm -ql 
+
+rpm -qi 
+
+rpm –qf 
+
+Chapter 12 Exam 
+
+Question ID 177 Which of the following would be considered a host? 
+
+* A printer attached to the network via an IP address 
+
+A network cable 
+
+The computer's hard drive 
+
+a CDROM 
+
+Question ID 178 A service is... 
+
+...a file that contains configuration information 
+
+...like an IP address 
+
+* ...a feature provided by one computer to another 
+
+...another name for a computer's hostname 
+
+ 
+
+
+Question ID 180 A network packet contains ... (choose two) 
+
+...the name of the router 
+
+*...the IP address of the source machine 
+
+* ...the IP address of the destination machine 
+
+...none of the above 
+
+Question ID 181 Only servers have hostnames. True or False? 
+
+True 
+
+* False 
+
+Question ID 184 Which of the following protocols defines how network communication functions? 
+
+DNS 
+
+* TCP/IP 
+
+SSH 
+
+DHCP 
+
+Question ID 185 Which of the following are valid IPv4 addresses? (choose two) 
+
+192.301.25.25 
+
+* 192.105.10.10 
+
+* 10.33.55.77 
+
+192.105.10.10.2 
+
+Question ID 186 The name of the primary wired network devices is ether0. True or False? 
+
+True 
+
+* False 
+
+Question ID 189 Which of the following commands will display your machine's IP address? 
+
+* ifconfig 
+
+route 
+
+ipconfig 
+
+dig 
+
+Question ID 190 Which of the following commands will display the routing table? (choose two) 
+
+* netstat -r 
+
+dig 
+
+ifconfig 
+
+* route 
+
+Question ID 191 Which of the following commands will allow you to log into a remote machine? 
+
+* ssh 
+
+route 
+
+netstat 
+
+dig 
+
+Question ID 192 What option to the netstat command has information shown as numbers rather than names? 
+
+* -n 
+
+-t 
+
+--name 
+
+-r 
+
+Question ID 193 Which of the following commands will allow you to log into the machine server1 with the account name nick? 
+
+* ssh nick@server1 
+
+ssh nick->server1 
+
+ssh nick-server1 
+
+ssh nick&server1 
+
+Question ID 194 The RSA key fingerprint allows the dig command to connect to remote systems. True or False? 
+
+True 
+
+* False 
+
+Chapter 13 Exam 
+
+Question ID 197 Which files contain user account information? (choose two) 
+
+* /etc/shadow 
+
+*/etc/passwd 
+
+/etc/password 
+
+/etc/group 
+
+Question ID 198 Which user can view the /etc/shadow file? 
+
+Any member of the password group 
+
+All users 
+
+* The root user 
+
+No users 
+
+Question ID 199 Which command will display the UID, GID and groups your current user belongs to? 
+
+* id 
+
+about 
+
+who 
+
+whoami 
+
+Question ID 200 Each user is a member of their own private group, of which they are the only member. True or False? 
+
+* True 
+
+False 
+
+
+Question ID 201 Which command will display the users that are currently logged in to the system? 
+
+id 
+
+whoami 
+
+* who 
+
+about 
+
+Question ID 202 The sudo command allows regular users to... 
+
+...run any commands as a system account without logging in. 
+
+...run any command as root, after providing the root password. 
+
+...run any command as root, after providing the sudo password. 
+
+* ...run certain commands as the root user. 
+
+Question ID 203 The /etc/sudoers file should be edited directly by root using the visudo command. True or False? 
+
+* True 
+
+False 
+
+Question ID 204 Which of the following commands will allow you to switch to the user "branch"? (choose three) 
+
+* su -l branch 
+
+* su branch 
+
+* su - branch 
+
+sudo branch 
+
+Question ID 205 The visudo command uses which text editor by default? 
+
+gedit 
+
+nano 
+
+* vi 
+
+pico 
+
+Question ID 206 Which of the following commands will display the group(s) a user belongs to? 
+
+whoami 
+
+all 
+
+group 
+
+* id 
+
+Question ID 207 Which of the following commands will display the groups that the user "bob" belongs to? (choose one) 
+
+all bob 
+
+groups -a 
+
+group bob 
+
+* id bob 
+
+Question ID 208 The /etc/group file follows what structure? 
+
+group:GID:user_list 
+
+group:<user_list 
+
+user:group 
+
+* group_name:password_placeholder:GID:user_list 
+
+Question ID 209 A GID is associated with a group name. True or False? 
+
+* True 
+
+False 
+
+Question ID 210 A user can belong to... 
+
+Only groups with a GID over 500 
+
+Only one group 
+
+Only five groups 
+
+* At least 16 groups 
+
+Question ID 212 Sudo privileges can be used to specify which user can use the sudo command to execute commands as other users. True 
+or False? 
+
+* True 
+
+False 
+
+Question ID 213 In distributions that do not allow the root user to login directly or via the su command, the installation process 
+automatically configures one user account to be able to use thesudo command to execute commands as if they were executed by the root 
+user. True or False? 
+
+* True 
+
+False 
+
+Question ID 214 Which of the following commands will display how long the system has been running since the last boot? (choose two) 
+
+* uptime 
+
+id 
+
+* w 
+
+who 
+
+Question ID 215 The /etc/shadow file contains plain-text passwords. True or False? 
+
+True 
+
+* False 
+
+Question ID 216 Which command can be used to view the /etc/passwd file entries? 
+
+* getent 
+
+uptime 
+
+uppasswd 
+
+getpasswd 
+
+
+Chapter 14 Exam 
+
+Question ID 217 UIDs 1-500 are usually reserved for what kind of users? 
+
+Remote log-in accounts 
+
+Are not used for user accounts, but for group accounts 
+
+* System accounts, such as server processes 
+
+Log-in (human) users 
+
+Question ID 218 If a user is deleted, the files and directories that the user owned... 
+
+* ...will show a UID as the owner, but not user name 
+
+...will have no user owner 
+
+...will have no UID owner 
+
+...are deleted as well 
+
+Question ID 219 Which of the following options for the useradd command allows root to specify the UID to be associated with the 
+account? 
+
+* -u 
+
+-G 
+
+-g 
+
+-U 
+
+Question ID 220 Which of the following options for the useradd command allows root to specify supplementary groups the user will be a 
+member of? 
+
+* -G 
+
+U 
+
+-u 
+
+-g 
+
+Question ID 221 On a system that does not use UPG, the useradd command will also create a user group. 
+
+For example, user "bob", group "bob". True or False? 
+
+True 
+
+* False 
+
+Question ID 222 The useradd command will create a home directory by default for a user. True or False? 
+
+* True 
+
+False 
+
+Question ID 223 The usermod command can be used to do all of the following except... 
+
+...change the user's home directory 
+
+* ...change the user's MAX and MIN password settings 
+
+...change the user's UID and GID 
+
+...add a user to a supplementary groups 
+
+Question ID 224 Which of the following commands will add the group "extra" to the user bob's secondary groups in addition to bob's 
+current secondary groups? 
+
+usermod -ag bob extra 
+
+* usermod -aG extra bob 
+
+usermod -a extra bob 
+
+usermod -G extra bob 
+
+Question ID 225 Which option for the usermod command can be used to specify a user's group ID (either primary or secondary)? (choose 
+two) 
+
+-S 
+
+* -g 
+
+-s 
+
+* -G 
+
+Question ID 226 For non-root users, the passwd command can only be used to change the password of the user running the command. 
+True or False? 
+
+* True 
+
+False 
+
+Question ID 227 The userdel command will... 
+
+* delete the user account, but leave the user's files by default 
+
+will prompt before deleting each file owned by a user 
+
+automatically delete a user and all the files owned by that user 
+
+automatically delete a user and the user's home directory and its contents 
+
+Question ID 228 The groupmod command can be used to change a group name. True or False? 
+
+* True 
+
+False 
+
+Question ID 229 The groupmod command can be used to change a group GID. True or False? 
+
+* True 
+
+False 
+
+Question ID 230 The groupmod command can be used to add users to a group. True or False? 
+
+True 
+
+* False 
+
+ 
+
+
+Question ID 231 Which of the following commands can be used to modify a group? 
+
+addgroup 
+
+groupadd 
+
+modgroup 
+
+* groupmod 
+
+Question ID 232 Which command can be used to determine a user's most recent log in? 
+
+shell 
+
+* last 
+
+history 
+
+login 
+
+Question ID 233 Which of the following files contains encrypted user password information? 
+
+/etc/passwd 
+
+/etc/usr 
+
+/etc/group 
+
+* /etc/shadow 
+
+Question ID 234 Which of the following files contains user IDs? 
+
+* /etc/passwd 
+
+* /etc/usr 
+
+/etc/shadow 
+
+/etc/group 
+
+Question ID 235 Which of the following files does the groupadd command use to determine the new GUI when a GUI isn't specified? 
+
+/etc/shadow 
+
+* /etc/group 
+
+/etc/passwd 
+
+/etc/usr 
+
+Question ID 236 Which of the following commands, run as root, will prevent the user "bob" from logging in? 
+
+usermod -D bob 
+
+* usermod -L bob 
+
+usermod -l bob 
+
+usermod -d bob 
+
+Question ID 673 What directory contains user's home directories? 
+
+* /home 
+
+/user 
+
+/rootfs 
+
+/ 
+
+Chapter 15 Exam 
+
+Question ID 237 Which of the following commands set "other" permissions on "file" to r-x? 
+
+chmod o=r+x file 
+
+chmod o+rx file 
+
+chmod o-r-w file 
+
+* chmod o=rx file 
+
+Question ID 238 Which of the following commands sets "other" permissions on "file" to r-x? 
+
+chmod 777 file 
+
+chmod 774 file 
+
+* chmod 775 file 
+
+chmod 776 file 
+
+Question ID 239 Only one set (user, group, other) of permission can be changed at once using the symbolic method. True or False? 
+
+True 
+
+* False 
+
+Question ID 240 Which of the following are methods for setting permissions using the chmod command? (choose two) 
+
+letter 
+
+* symbolic 
+
+binary 
+
+* octal 
+
+Question ID 241 The chown command can be used to change the owner and group of a file. True or False? 
+
+* True 
+
+False 
+
+Question ID 242 The chgrp command can be used to change the owner and group of a file. True or False? 
+
+True 
+
+* False 
+
+Question ID 243 The user "sysadmin" will be able to read the "file" because they own it. 
+
+----r--r-- 1 sysadmin group 38270 Sep 2 18:49 file True or False? 
+
+True 
+
+* False 
+
+ 
+
+ 
+
+
+Question ID 244 The user "sysadmin" will be able to change the permissions of the "file" because they own it. 
+
+----r--r-- 1 sysadmin group 38270 Sep 2 18:49 file True or False? 
+
+* True 
+
+False 
+
+Question ID 245 Octal notation uses the following values for the permissions granted: 
+
+r = 3, w = 2, x = 1 
+
+r = 7, w = 5, x = 0 
+
+* r = 4, w = 2, x = 1 
+
+r = 4, w = 2, x = 0 
+
+Question ID 246 Which of the following permissions would allow all users to add, view, and delete files in a directory? 
+
+666 
+
+750 
+
+* 777 
+
+775 
+
+Question ID 247 A user cannot delete a file if they do not own it. True or False? 
+
+True 
+
+* False 
+
+Question ID 248 The "execute" permission on a directory allows you to: (choose three) 
+
+* Along with write permission to successfully create new files 
+
+* Change to that directory or use it as part of a path 
+
+*Along with read permission to successfully perform "ls -l" 
+
+Along with write permission to successfully delete the directory 
+
+Question ID 249 The "execute" permission on a file allows you to: 
+
+This permission isn't meaningful for text files. 
+
+* Run the file as a script 
+
+Move the file to a new directory 
+
+Delete the file 
+
+Question ID 250 The chgrp command can be used on a file by: 
+
+A user that belongs to the files current group 
+
+Only root 
+
+Only the file owner 
+
+* The file owner and root 
+
+Question ID 251 The chown command can be used to change the user owner on a file by: 
+
+The file owner 
+
+The file owner and root 
+
+A user that belongs to the files current group 
+
+* Only root 
+
+Question ID 252 The chmod command can be used on a file by: 
+
+* The file owner and root 
+
+The file owner 
+
+Only root 
+
+A user that belongs to the files current group 
+
+Question ID 253 Which option for the chown command can be used to change the owner of a directory and all the files and directories 
+below it? 
+
+* -R 
+
+-r 
+
+-f 
+
+-a 
+
+Question ID 254 The chown command will only accept one file at a time as an argument. True or False? 
+
+True 
+
+* False 
+
+Question ID 255 The "execute" permission is never set on files by default. True or False? 
+
+* True 
+
+False 
+
+Question ID 256 The user owner of a file will always have the same or higher permissions as "other". True or False? 
+
+True 
+
+* False 
+
+Chapter 16 Exam 
+
+Question ID 348 The /tmp directory is a temporary directory and will not exist on a system at all times. True or False? 
+
+True 
+
+* False 
+
+Question ID 349 The /var directory has files that change over time. True or False? 
+
+* True 
+
+False 
+
+ 
+
+
+Question ID 350 The "sticky bit" permission... 
+
+* prevents others from removing files they don't own from a common directory 
+
+changes the group ownership of existing files in a directory 
+
+prevents others from overwriting files they don't own in common directories 
+
+sets the group ownership of any new file created in a directory 
+
+Question ID 352 Which of the following commands will set the "sticky bit" on /shared ? 
+
+* chmod 1777 /shared 
+
+chmod 2777 /shared 
+
+chmod 4777 /shared 
+
+None of the above 
+
+Question ID 353 The "setuid" permission... 
+
+prevents the owner of a file from being changed. 
+
+reports the output of a script to the owner 
+
+* allows a command to be run as the file owner. 
+
+allows files in a directory to be manipulated as by the directory owner 
+
+Question ID 355 Which of the following commands will set setuid for /usr/bin/program? 
+
+chmod 2755 /usr/bin/program 
+
+chmod 1755 /usr/bin/program 
+
+* chmod 4755 /usr/bin/program 
+
+None of the above 
+
+Question ID 356 The setgid permission... (choose two) 
+
+* allows files created in a directory to be owned by the group that owns the directory 
+
+* allows a command to be run as the group owner of the file. 
+
+can only be set on files 
+
+prevents the group owner of a file from being changed. 
+
+Question ID 357 Which of the following commands will set setgid on /shared ? 
+
+chmod 4777 /shared 
+
+* chmod 2777 /shared 
+
+None of the above 
+
+chmod 1777 /shared 
+
+Question ID 359 Setting setgid on a directory... 
+
+* will set the group owner of all files created in the directory to the group owner of the directory 
+
+is not allowed by the system 
+
+does nothing 
+
+will allow scripts in the directory to be executed as the group owner of the directory 
+
+Question ID 360 Deleting a source file will break an associated hard link. True or False? 
+
+True 
+
+* False 
+
+Question ID 361 A source and a hard link must be part of the same filesystem. True or False? 
+
+* True 
+
+False 
+
+Question ID 362 Deleting a source file will break an associated symbolic link. True or False? 
+
+* True 
+
+False 
+
+Question ID 363 A source file and a symbolic link must be part of the same file system. True or False? 
+
+True 
+
+* False 
+
+Question ID 364 Which of the following commands would create a hard link, "link" to "file"? 
+
+ln -s file link 
+
+ln link file 
+
+* ln file link 
+
+ln -s link file 
+
+Question ID 365 Which of the following commands would create a symbolic link, "link" to "file"? 
+
+* ln -s file link 
+
+ln -s link file 
+
+ln link file 
+
+ln file link 
+
+

@@ -1,0 +1,56 @@
+image_tag
+	Über image_tag wird direkt auf das Verzeichnis /app/assets/images verwiesen. Der Dateiname wird in der Datenbank abgelegt und über movie.<spaltenname> eingefügt.
+
+	Bsp. Helper:
+		def image_for(movie)
+			if movie.poster_image_file.blank?
+				image_tag("dummy.jpg")
+			else
+				image_tag(movie.poster_image_file)
+			end
+		end
+
+	Aufruf:
+		image_tag(@movie)
+
+
+Image-Array durch Helper erzeugen
+	def show_stars(validation)
+		str = ""						
+		for i in 1..5
+			if i <= validation.ranking then
+				str += image_tag "small_full_star.gif", size: "20x20"
+			else
+				str += image_tag "small_empty_star.gif", size: "20x20"
+			end
+		end
+		str.html_safe
+	end
+
+	Aufruf
+		<%= show_stars(validation) %>
+
+Durchschnitt berechnen und als Sterne anzeigen
+	Im Model von Projects den durchschnitt berechnen
+		def get_average_ranking
+			validations.average(:ranking)
+		end	
+
+	Helper erzeugen
+		def create_ranking(project)
+			str = ""
+			for i in 1..5
+				if (i-0.25) <= project.get_average_ranking then
+					str += image_tag "small_full_star.gif", size: "20x20"
+				elsif ((i-0.75) < project.get_average_ranking && project.get_average_ranking < (i-0.25))
+					str += image_tag "small_half_star.gif", size: "20x20"
+				else
+					str += image_tag "small_empty_star.gif", size: "20x20"
+				end
+			end
+			str.html_safe	
+		end
+
+	Aufruf
+		Ranking: <%= create_ranking(@project) %>		
+

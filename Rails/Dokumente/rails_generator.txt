@@ -1,0 +1,12 @@
+Anlegen eines Controllers --- Logik der Applikation
+	rails g controller <controller_name> --- Immer in der Mehrzahl
+
+	z.B.: rails g controller events
+
+Anlegen eines Models --- Daten der Applikation (Tabelle)
+	rails g model <model_name> <spalten-name>:<datentyp> --- Immer in der Einzahl
+
+	z.B.: rails g model event name:string location:string price:decimal 
+
+
+

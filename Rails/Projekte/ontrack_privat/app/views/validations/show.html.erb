@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @validation.comment %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @validation.username %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @validation.ranking %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_validation_path(@project, @validation) %> |
+<%= link_to 'Back', project_validations_path(@project) %>

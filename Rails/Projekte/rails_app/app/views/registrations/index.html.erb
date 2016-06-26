@@ -1,0 +1,24 @@
+<h3>Registrierungen für <%= @event.name %></h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>HowHeard</th>
+			<th>Registrierungen</th>
+			<th>Löschen</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @registrations.each do |registration| %>
+			<tr>
+				<td><%= registration.user.name %></td>
+				<td><%= registration.user.email %></td>
+				<td><%= registration.how_heard %></td>
+				<td><%= registration.event.name %></td>
+				<td><%= link_to "<i class='fi-trash icon-red'></i>".html_safe, event_registration_path(@event.id, registration.id), method: :delete, data: {confirm: "Wirklich löschen"} %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

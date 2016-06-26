@@ -1,0 +1,27 @@
+Die Kontrolle von Benutzereingaben findet im Model statt. 
+
+Bsp.:
+	Feld muss ausgefüllt sein
+		validates :title,  presence: { message: "Bitte alle Felder ausfüllen!" }
+
+	Länge von
+		validates :description, length: { minimum: 25, message: "Die Beschreibung muss mindestens 25 Zeichen enthalten!" }
+
+	Überprüfung ob Zahl
+		validates :total_gross, numericality: { only_integer: true, greater_than_or_equal_to: 0, message: "Die Einnahmen müssen ganzzahlig und größer als 0 sein" }
+
+	Überprüfung auf Dateiendung
+		validates :poster_image_file, allow_blank: true, format:  { with: %r{\.(gif|jpg|jpeg|png)}i, message: "Bitte *.gif, *.jpg, *.jpeg oder *.png verwenden!"}
+
+	Überprüfung auf bestimmten Inhalt
+		RATINGS = %w(G PG PG-13 R NC-17)
+		validates :rating, inclusion: { in: RATINGS),
+    message: 'Bitte geben sie eines der folgenden Ratings ein: "G, PG, PG-13, R oder NC-17"' }
+    ODER
+		validates :rating, inclusion: { in: %w(G PG PG-13 R NC-17),
+    message: 'Bitte geben sie eines der folgenden Ratings ein: "G, PG, PG-13, R oder NC-17"' }
+
+Weitere Anpassung:
+	Im Controller findet in den Actions: update und create eine Überprüfung statt ob es Fehler gibt. Falls ja wird das Formular neu geladen.
+
+	Im View muss eine Ausgabe der Fehlermeldungen stattfinden.

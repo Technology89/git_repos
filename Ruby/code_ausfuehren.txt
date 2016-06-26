@@ -1,0 +1,14 @@
+
+Code Ausfüren in der Konsole:
+	# irb -> Öffnet die Ruby Konsole in der Konsole
+				-> hier kann Ruby Code ausgeführt werden
+				-> gut geeeignet zum testen
+	# exit
+	beenden der Ruby-Console und Rückkehr zur Linux-Bash
+
+Skripting über Textdateien
+	Ruby-Befehle in einer Textdatei spreichern
+	Die Datei sollte die Endung rb haben: hello_world.rb
+
+	# ruby hello_world.rb
+	Der Befehl wird in der Linux-Bash ausgeführt

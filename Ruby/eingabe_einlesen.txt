@@ -1,0 +1,6 @@
+Eingabe vom User in Variable
+
+	Variablen_Name =  gets.chomp
+	
+			"gets" holt einen Input vom User
+			Normalerweise erzeugt gehts automatisch eine neue Zeile nach jedem Bit Eingabe. "chomp" verhindert das

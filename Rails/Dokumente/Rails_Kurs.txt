@@ -1,0 +1,348 @@
+Projekt erstellen:
+	rails new <projektname>
+
+Gem Foundation einbinden:
+	Ordner von der App/Gemfile
+		gem 'foundation-rails', '~> 5.5'
+
+		group :development do
+			gem 'rails_layout'
+		end
+
+		Optional:
+			gem 'foundation-icons-sass-rails'
+
+	Dannach einen Bundle Install ausführen
+
+	Foundation aktivieren
+		rails generate layout:install foundation5 --force
+
+Model und Controller anlegen
+	rails g resource <Name-Mehrzahl> title:string description:text start_date:datetime 
+		Resource besteht aus Model und Controller (keine Actions im Controller)
+
+	In Datenbank schreiben
+		rake db:migrate
+
+Index-Action im Controller anlegen
+	def index
+		@projects = Project.all
+	end
+
+Index.html.erb im View erstellen
+	<h1>
+		<%if @projects.size == 1 %>
+			<%="Projekt" %>
+		<% else %>
+			<%= "Projekte" %>
+		<% end %>
+	</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Start Date</th>
+				<th>Tasks</th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @projects.each do | var | %>
+				<tr>
+					<td><%= var.title %></td>
+					<td><%= var.description %></td>
+					<td><%= var.start_date %></td>
+					<td></td>
+					<td><%= link_to "Show", project_path(var.id) %></td>
+					<td><%= link_to "Edit", edit_project_path(var.id) %></td>
+					<td><%= link_to "Destroy", project_path(var.id), method: :delete, data: {confirm: "Sind sie sicher?"} %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	
+Route anlegen (routes.rb)
+	root "projects#index"
+	resources :projects
+
+Model mit Inhalt füllen
+	a = Project.new(title: "Test", description: "Test", start_date: "2016-03-03")
+	a.save
+
+New-Action, Create-Action und new.html.erb anlegen
+	before_action :set_project, only: [:show, :edit, :update, :destroy]
+	def new
+		@project = Project.new
+	end
+
+	def create
+		@project = Project.new(project_params)
+		if @project.save
+			flash[:notice] = "Eintrag erfolgreich erstellt :)"
+			redirect_to projects_url
+		else
+			flash[:alert] = "Leider ist etwas schief gegangen :("
+			render :new
+		end
+	end
+
+	private
+		def project_params
+			params.require(:project).permit(:title, :description, :start_date)
+		end
+
+		def set_project
+			@project = Project.find(params[:id])
+		end
+
+	new.html.erb
+		<h3>Neues Projekt</h3>
+
+		<%= render "form" %>
+
+	index.html.erb ergänzen
+		<%= link_to "Neues Projekt anlegen", new_project_path %>
+	
+Formular anlegen (_form.html.erb)
+	<%= form_for(@project) do |f| %>
+	<%= render "shared/errors", object: @project %>
+		<div class="row">
+			<div class="medium-3 columns">
+				<%= f.label :title %>
+			</div>
+			<div class="medium-9 columns">
+				<%= f.text_field :title %>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="medium-3 columns">
+				<%= f.label :description %>
+			</div>
+			<div class="medium-9 columns">
+				<%= f.text_area :description %>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="medium-3 columns">
+				<%= f.label :start_date %>
+			</div>
+			<div class="medium-9 columns">
+				<%= f.datetime_select :start_date %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="medium-3 columns">
+				&nbsp;
+			</div>
+			<div class="medium-9 columns">
+				<%= f.submit "Speichern", class: "button" %>
+				&nbsp;
+				<%= link_to "Zurück", projects_path, class:"button" %>
+			</div>
+		</div>	
+	<% end %>
+
+Validations eintragen (Im Model)
+	class Project < ActiveRecord::Base
+		validates :title, length: { minimum: 5, message: "Der Titel muss mindestens 5 Zeichen enthalten!" }
+		validate :start_date_cannot_be_in_the_past
+
+		def start_date_cannot_be_in_the_past
+		  errors.add(:start_date, "Das Datum muss in der Zukunft liegen!") if !start_date.blank? && start_date < Date.today
+		end
+	end
+
+	Der Befehl "validate" ruft die Methode auf die hinter ihm steht, in diesem Falle ":start_date_cannot_be_in_the_past"
+
+	Im Form die Fehler anzeigen lassen
+		...form_for(@project) do |f| %>
+		<% if object.errors.any? %>
+			<h3>Opps! Der <%= object.class.name.titleize.downcase %> konnte nicht gespeichert werden.</h3>
+			Korrigieren sie folgenden <%= pluralize(object.errors.count, "error") %>:
+			<ul>
+				<% object.errors.full_messages.each do |message| %>
+				<li><%= message %></li>	
+				<% end %>
+			</ul>
+		<% end %>
+		<div class=.....
+
+Error-Anzeige auslagern
+	Neuen Ordner in den Views -> "shared"
+		Neue Datein _errors.html.erb
+			<% if object.errors.any? %>
+				<h3>Opps! Der <%= object.class.name.titleize.downcase %> konnte nicht gespeichert werden.</h3>
+				Korrigieren sie folgenden <%= pluralize(object.errors.count, "error") %>:
+				<ul>
+					<% object.errors.full_messages.each do |message| %>
+					<li><%= message %></li>	
+					<% end %>
+				</ul>
+
+			<% end %>
+
+	_errors.html.erb in _form.html.erb Rendern
+		...form_for(@project) do |f| %>
+		<%= render "shared/errors", object: @project %>
+		<div class=.....
+
+Show, Destroy und Edit im Controller Einrichten
+	def edit
+	end
+
+	def update
+		if @project.update(project_params)	
+			flash[:notice] = "Update erfolgreich :)"	
+			redirect_to projects_url
+		else
+			flash[:alert] = "Leider ist etwas schief gegangen :("
+			render :edit
+		end
+	end
+
+	def destroy
+		@project.destroy
+		redirect_to projects_url
+	end
+
+	def show
+		
+	end
+
+edit.html.erb erstellen
+	<h2>Editieren von <%=@project.title %></h2>
+
+	<%= render "form" %>
+
+show.html.erb erstellen	
+	<h1><%= @project.title %></h1>
+
+	<p><%= @project.description %></p>
+
+	<p><%= @project.start_date %></p>
+
+
+	<p>
+		<ul class="button-group">
+			<li>
+				<%= link_to "Alle Projekte anzeigen", projects_path, class: "button" %>
+			</li>
+		</ul>
+	</p>
+
+
+Verlinkungen in der Index einfügen
+	<% @projects.each do | var | %>
+		<tr>
+			<td><%= var.title %></td>
+			<td><%= var.description %></td>
+			<td><%= var.start_date %></td>
+			<td></td>
+			<td><%= link_to "Show", project_path(var.id) %></td>
+			<td><%= link_to "Edit", edit_project_path(var.id) %></td>
+			<td><%= link_to "Destroy", project_path(var.id), method: :delete, data: {confirm: "Sind sie sicher?"} %></td>
+		</tr>
+	<% end %>
+
+Per Scaffold die verschachtelte Resource anlegen
+	rails g scaffold tasks title description:text start_date end_date project:references
+
+	rake db:migrate
+
+In der routes.rb die Resourcen verschachteln
+	resources :projects do
+   		resources :tasks
+	end
+
+In der Show von Projects einen Link zu den Tasks hinzufügen
+	<%= link_to "Tasks", project_tasks_path(@project.id), class: "button" %>
+
+Im Tasks Controller eine neue before_action anlegen
+	before_action :set_project
+
+	private   
+	    def set_project
+	      @project = Project.find(params[:project_id])
+	    end
+
+Index.html.erb von Tasks anpassen
+	<p id="notice"><%= notice %></p>
+
+	<h1>Listing Tasks for <%= @project.title %></h1>
+
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Title</th>
+	      <th>Description</th>
+	      <th>Start date</th>
+	      <th>End date</th>
+	      <th colspan="3"></th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @tasks.each do |task| %>
+	      <tr>
+	        <td><%= task.title %></td>
+	        <td><%= task.description %></td>
+	        <td><%= task.start_date %></td>
+	        <td><%= task.end_date %></td>
+	        <td><%= link_to 'Show', project_task_path(@project.id, task.id) %></td>
+	        <td><%= link_to 'Edit', edit_project_task_path(@project.id, task.id) %></td>
+	        <td><%= link_to 'Destroy', project_task_path(@project.id, task.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+
+	<br>
+
+	<%= link_to 'New Task', new_project_task_path(@project.id) %>
+
+Project.rb anpassen
+	has_many :tasks, dependent: :destroy
+
+Tasks.rb
+	belongs_to :project
+
+_form.html.erb anpassen
+	<%= form_for [@project, @task] do |f| %>
+	  <% if @task.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+	      <ul>
+	      <% @task.errors.full_messages.each do |message| %>
+	        <li><%= message %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+
+	  <div class="field">
+	    <%= f.label :title %><br>
+	    <%= f.text_field :title %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :description %><br>
+	    <%= f.text_area :description %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :start_date %><br>
+	    <%= f.datetime_select :start_date %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :end_date %><br>
+	    <%= f.datetime_select :end_date %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
+
+

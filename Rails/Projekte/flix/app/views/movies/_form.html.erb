@@ -1,0 +1,47 @@
+<%= form_for(@movie) do |f| %>
+<%= render "shared/errors", object: @movie %>
+	<p>
+		<%= f.label :title %><br>
+		<%= f.text_field :title %>
+	</p>
+	<p>
+		<%= f.label :description %><br>
+		<%= f.text_area :description %>
+	</p>
+
+	<p>
+		<%= f.label :cast %><br>
+		<%= f.text_area :cast %>
+	</p>
+
+	<p>
+		<%= f.label :director %><br>
+		<%= f.text_area :director %>
+	</p>
+
+	<p>
+		<%= f.label :duration %><br>
+		<%= f.number_field :duration %>
+	</p>
+
+	<p>
+		<%= f.label :poster_image_file %><br>
+		<%= f.text_area :poster_image_file, size:30, placeholder: "GIF, JPG, PNG als Dateityp"  %>
+	</p>
+
+	<p>
+		<%= f.label :rating %><br>
+		<%= f.text_field :rating %>
+	</p>
+
+	<p>
+		<%= f.label :released_on %><br>
+		<%= f.datetime_select :released_on %>
+	</p>
+	<p>
+		<%= f.label :total_gross %><br>
+		<%= f.text_field :total_gross %>
+	</p>
+
+	<p><%= f.submit "Speichern" %></p>
+<% end %>

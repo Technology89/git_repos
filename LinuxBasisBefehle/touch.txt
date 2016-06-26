@@ -1,0 +1,3 @@
+Datei neu anlegen
+
+	touch dateiname

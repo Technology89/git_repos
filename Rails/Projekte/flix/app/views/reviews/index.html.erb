@@ -1,0 +1,22 @@
+<h3>Reviews für <%= @movie.title %></h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Stars</th>
+			<th>Kommentar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @reviews.each do |review| %>
+			<tr>
+				<td><%= review.user.name %></td>
+				<td><%= review.user.email %></td>
+				<td><%= review.stars %></td>
+				<td><%= link_to "<i class='fi-magnifying-glass icon-green'></i>".html_safe, movie_review_path(@movie.id, review.id) %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

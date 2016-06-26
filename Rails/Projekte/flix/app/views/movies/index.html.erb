@@ -1,0 +1,50 @@
+<h1>
+		<%if @movies.size == 1 %>
+			<%="MOVIE" %>
+		<% else %>
+			<%= "MOVIES" %>
+		<% end %>
+</h1>
+
+<table>
+ <thead>
+	<tr>
+		<th>Title</th>
+		<th>Description</th>
+		<th>Rating</th>
+		<th>Released on</th>
+		<th>Total gross</th>
+		<th>Reviews</th>
+		<th>Anzeigen</th>
+		<th>Bearbeiten</th>
+		<th>Löschen</th>
+	</tr>
+ </thead>
+ <tbody>
+<% @movies.each do | var | %>
+	<tr>
+		<td><%= var.title %></td>
+		<td><%= truncate(var.description, length: 40, seperator: ' ') %></td>
+		<td><%= var.rating %></td>
+		<td><%= var.released_on %></td>
+		<td><%= flop_top(var) %></td>
+		<td class="center"><%= link_to "<i class='fi-torsos-all'></i>".html_safe, movie_reviews_path(var.id) %></td>
+		<td class="center"><%= link_to "<i class='fi-eye'></i>".html_safe, movie_path(var.id) %>
+		<% if current_user_admin %>
+			<td><%= link_to "<i class='fi-wrench icon-blue'></i>".html_safe, edit_movie_path(var.id) %></td>
+			<td><%= link_to "<i class='fi-trash icon-red'></i>".html_safe, movie_path(var.id), method: :delete, data: {confirm: "Wirklich löschen"} %></td>
+		<% end -%>
+	</tr>
+<% end %>
+</tbody>
+</table>
+<% if current_user_admin %>
+	<p>
+	<div class="button-group">
+		<%= link_to "Neuen Movie anlegen", new_movie_path %>
+	</div>
+	</p>
+<% end -%>
+
+
+

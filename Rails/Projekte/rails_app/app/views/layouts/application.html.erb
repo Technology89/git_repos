@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Rails App" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails App" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%# Modernizr is required for Zurb Foundation %>
+    <%= javascript_include_tag 'vendor/modernizr' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="row">    
+      <%= render 'layouts/navigation' %>    
+      <div class="row"> 
+        <div class="medium-9 columns">
+          <%= render 'layouts/messages' %>
+          <%= yield %>
+        </div>
+        <div class="medium-3 columns">
+         <%= render "layouts/sidebar" %>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

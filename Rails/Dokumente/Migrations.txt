@@ -1,0 +1,29 @@
+Die Datenbank wird beim anlegen des Projektes initialisiert oder erzeugt.
+
+Eine Tabelle in der Datenbank wird über einen Rails-Konsolenbefehl angelegt.
+	rails g model <name> <Spalten-Name>:<Datentyp>
+
+	Dieser Befehl erzeugt eine Migration-Datei.
+	Das ist eine Klasse mit der eine Tabelle in der Datenbank erzeugt wird.
+
+	Den Vorgang des Erzeugens startet man mit dem Konsolen-Befehl:
+		rake db:migrate
+
+		Rückgängig machen:
+		rake db:rollback
+
+Soll eine Tabelle verändert werden: neue Spalten, Spalten löschen, Spalten verändern dann wird das über eine Migration gemacht.
+	rails g migration <Anweisung und Dateiname> <Spaltenname>:<Datentyp>
+
+	z.B.:
+		rails g migration AddFieldsToEvents start_at:datetime
+
+		rails g migration AddImageAndCapacityToEvents image_file:string capacity:integer 
+
+
+Aktuellen Status der Migration anzeigen:
+	rake db:migrate:status
+
+	Ist der Status "up" ist die Anweisung bereits migriert.
+
+	Bei "down" ist sie noch nicht migriert. Hier muss dann wieder ein "rake db:migrate" ausgeführt werden.

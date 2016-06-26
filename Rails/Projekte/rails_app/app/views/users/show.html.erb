@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<% if current_user == @user %>
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end -%>
+<hr />
+<% if @user.registrations.any? %>
+	<h2>Registriert für:</h2>
+		<ul>
+			<% @user.registrations.each do |registration| %>
+				<li><%= link_to registration.event.name, registration.event %></li>
+			<% end -%>
+		</ul>
+<% end -%>
+<hr />
+<% if @liked_events.any? %>
+	<h3>Liked Events</h3>
+	<ul>
+		<% @liked_events.each do |var| %>
+			<li><%=link_to var.name, var %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+
+
+<%= link_to 'Back', users_path %>

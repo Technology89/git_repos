@@ -1,0 +1,17 @@
+
+<h1><%= @project.title %></h1>
+
+<p><%= @project.description %></p>
+
+<p><%= @project.start_date %></p>
+
+
+<p>
+	<ul class="button-group">
+		<li>
+			<%= link_to "Alle Projekte anzeigen", projects_path, class: "button" %>
+		</li>
+	</ul>
+</p>
+
+<%= link_to "Tasks", project_tasks_path(@project.id), class: "button" %>

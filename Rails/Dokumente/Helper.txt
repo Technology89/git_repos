@@ -1,0 +1,55 @@
+ALLGEMEIN
+Rails stellt eine ganze Reihe von Helpern zur Verfügung, mit deren Hilfe Zahlen und Text formatiert und gestaltet werden kann.
+
+Es gibt in Rails 2 Arten VIEW-Helper zu definieren:
+	- Im Applikation-Controller
+	- Im Verzeichnis app/helpers/application_helper.rb
+
+RAILS HELPER
+	content_tag
+		ein HTML-Tag wird durch Rails erstellt
+
+			content_tag(:strong, "FREE")
+
+	pluralize
+		die engl. Singular und Pluralform wird je nach Anzahl gewählt
+
+			pluralize(@events.size, "Event ist vorhanden", "Events sind vorhanden")
+
+	number_to_currency
+		eine Zahl wird im aktuellen Währungsformat dargestellt
+
+			number_to_currency(var.price, unit: :"€")
+
+	html_safe
+		ein String wird so zum Browser gesendet wie er geschrieben steht; die von Rails überlichweise durchgeführte Maskierung von Tags wird verhindert
+
+			"<strong>FREE</strong>".html_safe
+
+	mb_chars.limit(40)
+		Limitiert einen String auf 40 Byte
+	
+			var.description.mb_chars.limit(40)
+
+	truncate(var.description, length: 40, seperator: ' ')
+		Limitiert die Ausgabe auf 40, bzw. Trennt bei einem Leerzeichen (Zeigt am Ende "..." an)
+
+EIGENE HELPER
+	Immer wenn Code häufiger als 1 mal benötigt wird, wird der Code in einen Helper geschrieben.
+	Rails unterstützt dieses Vorgehen mit den Dateien im Verzeichnis app/helpers. 
+
+	Wenn im VIEW ein Funktionsaufruf, z.B. format_price(Objektname) erfolgt, werden alle Dateien in diesem Ordner nach einer Funktion mit diesem Namen und einem Parameter durchsucht.
+
+	Beispiel:
+		Aufruf in der View index.html.erb:
+			<%= format_price(var) %>
+
+	Definition in app/helpers/application_helper.rb
+		def format_price(var)
+			if var.free?
+				content_tag(:strong, "FREE")
+				#"<strong>FREE</strong>".html_safe
+			else
+				number_to_currency(var.price, unit: :"€")
+			end
+		end

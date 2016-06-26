@@ -1,0 +1,16 @@
+1. Schritt:
+Erstellen Sie eine Tabelle reviews, inklusive controller (rails g resource) mit den Spalten: name (string), stars (integer), comment (text), movie_id (integer)
+
+2. Schritt:
+Stellen Sie sicher, dass die Tabelles reviews in einer 1:n Beziehung zu movies steht: ein Movie hat viele reviews. Testen Sie die Funktionalität in der Console, indem Sie Reviews zu einem Movie zugeordnet anlegen und ausgeben.
+
+3. Schritt
+Zeigen Sie die Reviews abhängig von dem jeweiligen Movie, dem die Review zugeordnet an; indem Sie eine index-action erstellen.
+Arbeiten Sie mit dem Konzept der verschachtelten resource.
+
+4. Schritt
+Geben Sie dem User die Möglichkeit einen Film zu bewerten, indem Sie für das Review ein Formular erstellen.
+Nutzen Sie das in der Movie-resource bereits erstellte Error-Handling. Es ist eine create und update Bearbeitung notwendig.
+
+5. Schritt
+Die Reviews zu einem Film sollen in der Show-Action des Films als Liste angezeigt werden, ohne Kommentar. Ein Klick auf den einzelnen Review zeigt den kompletten Text in einer Show-Action des Reviews an.

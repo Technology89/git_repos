@@ -1,0 +1,4 @@
+In der MOVIE - App hat die Einführung des Users als eigenständige Tabelle die Auswirkung, dass die Review-Tabelle zur JOIN-Tabelle wird.
+Programmieren Sie die AUswirkungen.
+
+Beim Anlegen einer Bewertung muss der User eingeloggt sein.

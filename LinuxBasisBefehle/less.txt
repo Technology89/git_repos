@@ -1,0 +1,5 @@
+Zeigt den Inhalt einer Datei an.
+
+less dateinamen
+	
+	//die Eingabe von q beendet den Befehl

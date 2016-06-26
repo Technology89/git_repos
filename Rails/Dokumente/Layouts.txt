@@ -1,0 +1,36 @@
+http://railsapps.github.io/rails-foundation.html
+
+Es ist überlich für die Darstellungs- und Layoutebene in der Webprogrammiert mit CSS-Frameworks zu arbeiten.
+
+Im Ruby-On-Rails Umfeld haben sich 2 Frameworks heraus kristallisiert:
+	Bootstrap-Twitter
+	Foundation
+
+Um mit Foundation zu arbeiten sind folgende Schritte notwendig:
+
+1. Einbinden der entsprechenende Gems
+	gem 'foundation-rails', '~> 5.5' (Um Foundation 5 zu installieren)
+
+	gem 'foundation-icons-sass-rails' (Icon-Set von Foundation)
+
+	group :development do
+  		gem 'rails_layout'
+	end
+
+2. Nach einen 'bundle install' der die beiden gems in die App einbindet und die entsprechenden CSS- und Javascript-Datein zur verfügung stellt, werden die für Foundation notwendigen Datein erzeugt.
+
+Der Befehl lautet
+	rails generate layout:install foundation5 --force
+
+3. Nun können Anpassungen in der app/assets/stylesheets/1st_load_framework.css.scss vorgenommen werden.
+
+Die Referenz bildet die Dokumentation zur Foundation:
+	http://foundation.zurb.com/sites/docs/v/5.5.3/
+
+Bei Foundation wird eine Tabelle in <thead> und <tbody> unterteilt
+	<table>
+		<thead>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>

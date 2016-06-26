@@ -1,0 +1,20 @@
+ACTIONS:
+	Im Zusammenhang mit Formularen kennt Rails 4 Actions:
+		new: ein neuer Event wird im Controller erstellt und an eine Webtemplate views/events/new.html.erb weitergeleitet
+		create: die Daten eines neu erstellten Events werden zur CREATE-Action geleitet und dort in der Datenbank gespeichert.
+		edit: ein vorhandener Event wird in der Action edit und dann im Template views/events/edit.html.erb dargestellt.
+		update: hier werden die Änderungen gespeichert.
+
+HELPER:
+	Formhelper zur Erstellung des Formulars 
+		<%= form_for(@event) do |f| %>
+			...
+		<% end %>
+		Dieser Helper erstellt das Html-Formular. Die Methode 'form_for' erwartet als ersten Parameter ein Datenbank-Objekt.
+		In der do-Schleife werden dann die einzelnen Tabellenspalten durchlaufen.
+	Formhelper für die Formularelemente
+		<%= f.text_field :name %>
+		Dieser Helper 'text_field' erstellt ein Textfeld, das auf die Tabellenspalte 'name' verweist.
+
+		Vorbelegung des Feldes:
+			f.text_area :poster_image_file, size:30, placeholder: "GIF, JPG, PNG als Dateityp"

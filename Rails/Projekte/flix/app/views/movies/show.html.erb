@@ -1,0 +1,72 @@
+<h1><%= @movie.title %></h1>
+
+<p><%= @movie.description %></p>
+
+<%= image_for(@movie) %>
+<p>
+	<h3>Wann</h3>
+	<%= @movie.released_on %>
+
+	<h3>Worum geht's?</h3>
+	<%= @movie.description %>
+
+	<h3>Bewertung</h3>
+	<%= @movie.rating %>
+
+	<h3>Einspielergebnis</h3>
+	<%= @movie.total_gross %>
+
+	<h3>Lauflänge</h3>
+ <%= pluralize(@movie.duration, 'minute') %>
+
+ <h3>Regisseur</h3>
+ <%= @movie.director %>
+
+ <h3>Besetzung</h3>
+ <%= @movie.cast %>
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Stars</th>
+			<th>Kommentar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @reviews.each do |review| %>
+			<tr>
+				<td><%= review.user.name %></td>
+				<td><%= review.stars %></td>
+				<td><%= link_to "<i class='fi-magnifying-glass icon-green'></i>".html_safe, movie_review_path(@movie.id, review.id) %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<h3>Fans</h3>
+<ul id="add_fans">
+<% if @fans.any? %>	
+	Anzahl der Fans: <%= @fans.count %>
+	<hr/>
+	
+
+		<% @fans.each do |var| %>
+			<li><%=link_to var.name, var %></li>
+		<% end %>
+	
+<% else %>
+	<li id="no_fan">Sei der 1. Fan, du Penner!</li>
+<% end %>
+</ul>
+<% if @current_fan %>
+	<%= button_to "Unlike", movie_favorite_path(@movie, @current_fan), class: "button", method: :delete %>
+<% else %>
+	<%= button_to "Like", movie_favorites_path(@movie), remote: true, class: "button" %>
+<% end %>
+<p>
+	<div class="button-group">
+		<%= link_to "Alle Movies anzeigen", movies_path %></p>
+		<%= link_to "Back", request.referer, class:"button" %>
+		<%= link_to "Bewerten!!!", new_movie_review_path(@movie.id), class:"button" %>
+	</div>
+</p>

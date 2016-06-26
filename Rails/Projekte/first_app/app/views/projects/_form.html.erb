@@ -1,0 +1,37 @@
+<%= form_for(@project) do |f| %>
+<%= render "shared/errors", object: @project %>
+	<div class="row">
+		<div class="medium-3 columns">
+			<%= f.label :title %>
+		</div>
+		<div class="medium-9 columns">
+			<%= f.text_field :title %>
+		</div>
+	</div>
+	<div class="row">	
+		<div class="medium-3 columns">
+			<%= f.label :description %>
+		</div>
+		<div class="medium-9 columns">
+			<%= f.text_area :description %>
+		</div>
+	</div>
+	<div class="row">	
+		<div class="medium-3 columns">
+			<%= f.label :start_date %>
+		</div>
+		<div class="medium-9 columns">
+			<%= f.date_select :start_date %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="medium-3 columns">
+			&nbsp;
+		</div>
+		<div class="medium-9 columns">
+			<%= f.submit "Speichern", class: "button" %>
+			&nbsp;
+			<%= link_to "Zurück", projects_path, class:"button" %>
+		</div>
+	</div>	
+<% end %>

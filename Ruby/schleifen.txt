@@ -1,0 +1,69 @@
+While-Loop
+	While variable < Bedingung 
+		Die Schelife läuft so lange wie die Bedingung erfüllt ist
+		Schleife darf nicht unendlich sein
+	end
+		Jede Schleife mit "end" abschließen
+
+Until-Loop
+	i = 0
+	until i == 6
+  	i += 1
+	end
+		Schleife läuft so lange bis die Bedingung erfüllt ist
+		Für "i += 1" kann man auch "i = i + 1" schreiben
+		Bei "i += 1" wird inkrementiert und direkt in der Variable gespeichert.
+
+		In Ruby gibt es kein "++" oder ähnliches. Zum direkten abspeichern in der Variable gibt es:
+			+=
+			-=
+			*=
+			/=
+
+For-Loop
+	for var in 1...10
+		Schleife wird ausgeführt bis die Variable bis 9 und nicht bis 10 gezählt hat.
+		Dies liegt an den 3 Punkten, welche Ruby mitteilt die letzte Zahl zu auszunehmen.
+		Um 10 zu inkludieren werden, müssen 2 Punkte verwendet werden.
+
+Loop-Methode
+	loop { print "Hello, world!" }
+		Unendliche Schleife
+		"{}" kann durch "do" und "end" ersetzt werden
+				loop do
+					print "Hello, world!"
+				end
+
+	Um einen Loop zu unterbrechen gibt es den Befehl "break if Bedingung"
+
+Next-If
+	for i in 1..5
+  	next if i % 2 == 0
+  	print i
+	end
+		Es wird nur die Variable "i" ausgegeben, wenn "i" durch 2 ein false ergibt. Also wird "print i" übersprungen, wenn die "next if" Bedingung nicht erfüllt ist.
+
+.each
+	object.each { |item| }
+	oder
+	object.each do
+	 |item|
+	end
+		"|item|" Ist ein Platzhalter für jedes Element des Objektes. Der Name kann frei gewählt werden, muss aber in "||" stehen.
+					numbers = [1, 2, 3, 4, 5]
+
+					# one way to loop
+					numbers.each { |item| puts item }
+
+					# another way to loop
+					numbers.each do |item|
+					  puts item
+					end
+
+.times
+	10.times { print "Hello world!" }
+	oder
+	10.times do
+    print "Hello world!"
+	end
+		Quasi eine kompakte "for" Schleife die 10 mal den Text ausgibt.
