@@ -1,0 +1,102 @@
+1. 	Tabelle Employee erstellen mit Spalten: prename, lastname, user_id
+		rails g model employees prename:string lastname:user user_id:integer
+		rake db:migrate
+
+2.	Validierung von user_id und lastname --> Eingabe vorhanden
+		valdiates :user_id, presence: true
+		valdiates :lastname, presence: true
+
+3.	Migration für Tasks um "duration:integer" und "employee_id:integer" hinzuzufügen
+		rails generate migration AddColumnToTasks duration:decimal employee_id:integer
+		rake db:migrate
+
+4.	Beziehungen der Tabellen, Employee hat viele Tasks, ein employee hat ein user
+		Model Employees:
+			belongs_to :users
+			has_many :tasks
+		Model Users:
+			belongs_to :employees
+		Model Tasks:
+			belongs_to :employees
+
+5.	Zusätzlicher Navigationspunkt für Employees (Nur für Admin)
+		currunt_user_admin helper (Siehe PDF)	
+		<% if current_user_admin? %><ul><%= link_to "Employees", employees_path %></ul><%end%>
+
+6.	Seeds.rb einträge für 2 Benutzer
+		User.create(name:..., lastname:...)
+		User.create(name:..., lastname:...)
+		rake db:seed
+
+7. 	Seeds.rb einträge für 2 Tasks
+		Task.create(duration:1.75, verantwortlich:Theo)
+		Task.create(duration:2.50, verantwortlich:Theo)
+		rake db:seed
+
+8.	Formular optimieren mit Select-Field für User
+		<%= f.select :user_id, User.all.collect { |p| [ p.name, p.id ] }, include_blank: true %> (Testen!)
+		f.select :user_id, @users.map{ |u| [u.name, u.id] } 
+		ODER
+		<div class="row"> 
+			<div class="medium-3 columns"> 
+				<%= f.label :how_heard %> 
+			</div> 
+			<div class="medium-9 columns"> 
+				<%= f.select :name, Users::USER_NAMES_OPTIONS, prompt: "Bitte wählen" %> 
+			</div>
+		</div>
+		USER NAMES OPTION im Model		
+			@users = User.all
+			USER_NAMES_OPTIONS = @users.collect { |user| user.name }
+9.	Spalten im Formular Tasks für duration und employee id hinzufügen
+		<div class="row"> 
+			<div class="medium-3 columns"> 
+				<%= f.label :duration %> 
+			</div> 
+			<div class="medium-9 columns"> 
+				<%= f.text_field :duration %> 
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="medium-3 columns"> 
+				<%= f.label :employee_id %> 
+			</div> 
+			<div class="medium-9 columns"> 
+				<%= f.text_field :employee_id %> 
+			</div>
+		</div>
+
+10.	In der index.html.erb die Beschreibung auf 20 Zeichen begrenzen
+		<td><%= truncate(var.description, length: 20, seperator: ' ') %></td>
+
+11. 	In der index.html.erb das Datumsfeld mit strftime optimieren
+		<td><%= event.start_at.strftime("%Y %m %d") %></td>
+
+12. 	Im Model von Employee mit der eigenschaft "name" vor und nachnamen zusammenfassen
+		def name
+   			"#{prename} + #{lastname}"
+  		end
+
+13.	In der index.html.erb Foundation Icons einfügen (fi-pencil, fi-target, fi-trash)
+		<td><%= link_to "<i class='fi-target'></i>".html_safe, event_registrations_path(event.id) %></td>
+	In der 1st_load_framework.css
+		@import "foundation-icons";	
+
+14.	In der 1st_loadframework.css Farben und größe der Symbole festlegen
+		.icon-red {
+ 			color: red;
+ 			 font-size: 1.5em;
+		}
+
+		.icon-blue {
+			  color: blue;
+  			font-size: 1.5em;
+		}
+
+		.icon-green {
+ 			 color: green;
+  			font-size: 1.5em;
+		}	
+	In der index.html.erb
+		<td><%= link_to "<i class='fi-target icon-blue'></i>".html_safe, event_registrations_path(event.id) %></td>
+			
